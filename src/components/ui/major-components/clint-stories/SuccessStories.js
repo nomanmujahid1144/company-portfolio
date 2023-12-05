@@ -1,8 +1,11 @@
+import { SlickReviewSlider } from "../../minor-components/slider/SlickSlider"
+import { SingleStory } from "./SingleStory"
+
 export const SuccessStories = () => {
     return (
         <div className="feedback-section-three dark-bg mt-110 lg-mt-70">
             <img src="images/shape/shape_06.svg" alt="" className="shapes shape-one" />
-            <div className="inner-content d-lg-flex align-items-center clearfix">
+            <div className="inner-content d-lg-flex align-items-center clearfix overflow-hidden">
                 <div className="text-wrapper">
                 <div className="title-style-one white-vr">
                     <h2 className="title">
@@ -15,7 +18,16 @@ export const SuccessStories = () => {
                     </a>
                 </div>
                 {/*  /.text-wrapper */}
-                <div className="slider-wrapper">
+                <div className='slider-wrapper'>
+                    {/* <div className="feedback_slider_three"> */}
+                    <SlickReviewSlider >
+                        {[1, 2, 3, 4].map((item) => (
+                            <SingleStory />
+                        ))}
+                    </SlickReviewSlider>
+                    {/* </div> */}
+                </div>
+                {/* <div className="slider-wrapper">
                     <div className="feedback_slider_three">
                         <div className="item">
                         <div className="block-wrapper">
@@ -29,12 +41,10 @@ export const SuccessStories = () => {
                                 <img src="images/icon/icon_28.svg" alt="" />
                             </a>
                             </div>{" "}
-                            {/* /.overlay-content */}
                         </div>{" "}
-                        {/* /.block-wrapper */}
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )

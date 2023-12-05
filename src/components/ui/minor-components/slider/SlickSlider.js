@@ -85,7 +85,7 @@ var settings = {
 };
 var reviewSettings = {
     dots: true,
-    centerMode: true,
+    centerMode: false,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -93,12 +93,8 @@ var reviewSettings = {
     prevArrow: <PrevArrow />, // Hide the previous arrow
     nextArrow: <NextArrow />, // Hide the next arrow
     appendDots: dots => (
-        <div
-          style={{
-                padding: "20px",
-          }}
-        >
-          <ul style={{ margin: "0px" }}> {dots} </ul>
+        <div>
+          <ul > {dots} </ul>
         </div>
       ),
     responsive: [
@@ -167,7 +163,7 @@ export const SlickReviewSlider = ({ children }) => {
     
     return (
     
-        <Slider ref={sliderRef} {...reviewSettings} beforeChange={(oldIndex, newIndex) => setActiveSlide(newIndex)} afterChange={(index) => handleDotClick(index)} >
+        <Slider className='feedback_slider_three' ref={sliderRef} {...reviewSettings} beforeChange={(oldIndex, newIndex) => setActiveSlide(newIndex)} afterChange={(index) => handleDotClick(index)} >
             {React.Children.map(children, (child, index) => React.cloneElement(child, { isActive: index === activeSlide }))}
         </Slider>
     )

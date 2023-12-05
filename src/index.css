@@ -18,8 +18,19 @@ object {
   vertical-align: baseline; /* or the default value 'baseline', depending on your requirements */
 }
 
+/* .slick-dots {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: start !important;
+} */
 
-.slick-dots li button:before {
+
+/* .slick-dots li button:before {
   font-family: 'slick';
   font-size: 13px !important;
   line-height: 20px;
@@ -39,8 +50,16 @@ object {
 .slick-dots li button:hover, .slick-dots li button:focus {
   outline: none;
   color: #3578fa !important;;
-}
+} */
 
+
+.feedback_slider_three .slick-dots {
+  position: absolute;
+  left: -135px;
+  bottom: -20% !important;
+  padding: 0;
+  margin-bottom: 0;
+}
 
 /* For screen width 1300px and above */
 @media screen and (min-width: 1400px) {
