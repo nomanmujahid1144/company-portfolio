@@ -14,12 +14,11 @@ export const Navbar = () => {
   };
 
   const navigationLinks = [
-    { text: 'Home', link: '#' },
-    { text: 'Elements', link: '#' },
-    { text: 'Portfolio', link: '#' },
-    { text: 'Pages', link: '#' },
-    { text: 'Shop', link: '#' },
-    { text: 'Blog', link: '#' },
+    { text: 'Home', link: '/' },
+    { text: 'Portfolio', link: '/portfoilo' },
+    { text: 'Blog', link: '/blog' },
+    { text: 'About-US', link: '/about' },
+    { text: 'Contact', link: '/contact' },
   ];
 
 
