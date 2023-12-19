@@ -10,9 +10,9 @@ export const Index = () => {
         <>       
             <HeroIndex />
             <Services />
-            <AboutCompany />
             <Counter />
             <SuccessStories />
+            <AboutCompany />
             <WhyChooseCompany />
         </>
     )

@@ -1,14 +1,14 @@
-export const SingleStory = () => {
+export const SingleStory = ({portfolioImage, portfolioLink}) => {
     return (
         <div className="item">
             <div className="block-wrapper">
-                <img src="images/media/img_05.jpg" alt="" className="screen" />
+                <img src={portfolioImage} alt="" className="screen" />
                 <div className="overlay-content d-flex align-items-end">
                 <a
-                    href="portfolio-detailsV2.html"
-                    className="d-flex justify-content-between align-items-center"
+                    href={portfolioLink}
+                    className="d-flex justify-content-between align-items-center text-sm"
                     >
-                    <span>www.uiart.com</span>
+                    <span>{portfolioLink}</span>
                     <img src="images/icon/icon_28.svg" alt="" />
                 </a>
                 </div>{" "}

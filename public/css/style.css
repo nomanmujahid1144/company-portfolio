@@ -2463,7 +2463,7 @@ body .theme-btn-nineteen:hover {color: #fff;}
 .feedback_slider_three .block-wrapper:hover .overlay-content {opacity: 1; transform: translateY(0);}
 .feedback_slider_three .block-wrapper .overlay-content a {
   font-family: 'gorditamedium';
-  font-size: 22px;
+  font-size: 15px;
   color: var(--heading);
   width: 100%;
 }
@@ -4601,6 +4601,7 @@ body .theme-btn-nineteen:hover {color: #fff;}
   animation: fade-in 1.1s infinite linear;
 }
 .card-style-seven {
+  border: solid;
   background: #fff;
   border-radius: 8px;
   padding: 40px 70px 38px 50px;

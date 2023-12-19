@@ -1,9 +1,33 @@
 import { SlickReviewSlider } from "../../minor-components/slider/SlickSlider"
-import { SingleStory } from "./SingleStory"
+import { SingleStory } from "./SingleStory";
+import portfolioImage_01 from '../../../../assets/portfolios/portfolio_1.png';
+import portfolioImage_02 from '../../../../assets/portfolios/portfolio_2.png';
+import portfolioImage_03 from '../../../../assets/portfolios/portfolio_3.png';
+import portfolioImage_04 from '../../../../assets/portfolios/portfolio_4.png';
 
 export const SuccessStories = () => {
+
+    const portfolios = [
+        {
+            portfolioImage: portfolioImage_01,
+            portfolioLink: 'deliverez.pk'
+        },
+        {
+            portfolioImage: portfolioImage_02,
+            portfolioLink: 'thestudenthelpline.co.in'
+        },
+        {
+            portfolioImage: portfolioImage_03,
+            portfolioLink: ''
+        },
+        {
+            portfolioImage: portfolioImage_04,
+            portfolioLink: 'vipinfluencers.com'
+        },
+    ]
+
     return (
-        <div className="feedback-section-three dark-bg mt-110 lg-mt-70">
+        <div className="feedback-section-three dark-bg ">
             <img src="images/shape/shape_06.svg" alt="" className="shapes shape-one" />
             <div className="inner-content d-lg-flex align-items-center clearfix overflow-hidden">
                 <div className="text-wrapper">
@@ -21,8 +45,11 @@ export const SuccessStories = () => {
                 <div className='slider-wrapper'>
                     {/* <div className="feedback_slider_three"> */}
                     <SlickReviewSlider >
-                        {[1, 2, 3, 4].map((item) => (
-                            <SingleStory />
+                        {portfolios.map((item) => (
+                            <SingleStory
+                                portfolioImage={item.portfolioImage}
+                                portfolioLink={item.portfolioLink}
+                            />
                         ))}
                     </SlickReviewSlider>
                     {/* </div> */}

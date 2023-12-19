@@ -1,3 +1,11 @@
+import screen2 from '../../../../assets/index-images/screen2.png';
+import screen3 from '../../../../assets/index-images/screen3.png';
+import screen4 from '../../../../assets/index-images/screen4.png';
+import screen5 from '../../../../assets/index-images/screen5.png';
+import screen6 from '../../../../assets/index-images/screen6.png';
+import screen7 from '../../../../assets/index-images/screen7.png';
+import screen8 from '../../../../assets/index-images/screen8.png';
+
 export const HeroIndex = () => {
     return (
         <div className="hero-banner-two">
@@ -31,19 +39,19 @@ export const HeroIndex = () => {
                 {/* /.text-wrapper */}
                 <div className="row gx-md-5 align-items-end h-100">
                     <div className="col-3">
-                    <img src="images/assets/screen_02.png" alt="" />
+                    <img src={screen2} alt="" />
                     </div>
                     <div className="col-3">
-                    <img src="images/assets/screen_03.png" alt="" className="mb-35" />
-                    <img src="images/assets/screen_04.png" alt="" />
+                    <img src={screen3} alt="" className="mb-35" />
+                    <img src={screen4} alt="" />
                     </div>
                     <div className="col-3">
-                    <img src="images/assets/screen_05.png" alt="" className="mb-35" />
-                    <img src="images/assets/screen_06.png" alt="" />
+                    <img src={screen5} alt="" className="mb-35" />
+                    <img src={screen6} alt="" />
                     </div>
                     <div className="col-3">
-                    <img src="images/assets/screen_07.png" alt="" className="mb-35" />
-                    <img src="images/assets/screen_08.png" alt="" />
+                    <img src={screen7} alt="" className="mb-35" />
+                    <img src={screen8} alt="" />
                     </div>
                 </div>
                 <img

@@ -1,88 +1,91 @@
+import apiIntegration from '../../../../assets/services/rest-api.png';
+import appDevelopment from '../../../../assets/services/app-development.png';
+import webDevelopment from '../../../../assets/services/web-development.png';
+import artificialIntelligence from '../../../../assets/services/artificial-intelligence.png';
+import marketing from '../../../../assets/services/marketing.png';
+import design from '../../../../assets/services/design.png';
+
 export const Services = () => {
 
+    const services = [
+        {
+            serviceName: 'API Integration',
+            serviceDescription: 'Maximize connectivity and streamline operations with our expert API Integration. Tailored solutions for seamless efficiency and enhanced business performance.',
+            serviceIcon: apiIntegration,
+            fadedelay: 0
+        },
+        {
+            serviceName: 'Mobile Development',
+            serviceDescription: 'Tailored app solutions for your unique business needs. Our developers create seamless user experiences, working closely with you from design to development.',
+            serviceIcon: appDevelopment,
+            fadedelay: 100
+        },
+        {
+            serviceName: 'Web Development',
+            serviceDescription: 'Transform your online presence with our expert Web Development. Tailored solutions for seamless user experiences, from concept to execution.',
+            serviceIcon: webDevelopment,
+            fadedelay: 150
+        },
+        {
+            serviceName: 'AI & Machine Learning',
+            serviceDescription: 'Unlock possibilities with our AI & Machine Learning solutions. Tailored for your business, our expert team enhances decision-making and operations efficiency.',
+            serviceIcon: artificialIntelligence,
+            fadedelay: 200
+        },
+        {
+            serviceName: 'Marketing',
+            serviceDescription: 'Elevate your brand with our impactful Marketing solutions. Tailored strategies for engagement and results, ensuring your business stands out in the competitive landscape.',
+            serviceIcon: marketing,
+            fadedelay: 250
+        },
+        {
+            serviceName: 'Design',
+            serviceDescription: 'Crafting visual excellence: Web, Figma, illustrations, Photoshop. Elevate your brand with our creative designs.',
+            serviceIcon: design,
+            fadedelay: 300
+        },
+    ]
+
     return (
-        <div className="vcamp-feature-section-three mt-160 lg-mt-120 mb-150 lg-mb-100">
-        <div className="container">
-            <div className="row align-items-center mb-40 md-mb-20">
-            <div className="col-lg-5 col-md-6 col-sm-8">
-                <div className="title-style-five">
-                <h2 className="title">Our included service.</h2>
-                </div>
-            </div>
-            <div className="col-md-6 col-sm-4 me-auto text-sm-end text-start">
-                <a
-                href="serviceV1.html"
-                className="theme-btn-five position-relative xs-mt-30"
+        <>
+        <div className="vcamp-feature-section-seven">
+            <div className="container">
+                <div className="row">
+                <div
+                    className="col-xxl-7 col-xl-9 col-lg-7 col-md-9 m-auto"
+                    data-aos="fade-up"
                 >
-                See all Services
-                </a>
-            </div>
-            </div>
-            <div className="row">
-            <div className="col-lg-3 col-sm-6">
-                <div className="card-style-three mt-50">
-                <div className="icon d-flex align-items-center justify-content-center">
-                    <img src="images/icon/icon_24.svg" alt="" className="tran3s" />
+                    <div className="title-style-five text-center">
+                    <h2 className="title">We provide industrial solution also</h2>
+                    </div>
                 </div>
-                <h4 className="title">Core WordPress</h4>
-                <ul className="style-none">
-                    <li>Personalization</li>
-                    <li>Third-Party Integrations</li>
-                    <li>First-Party Analytics</li>
-                    <li>Hosting Setup</li>
-                    <li>Securty</li>
-                </ul>
-                </div>{" "}
-                {/* /.card-style-three */}
-            </div>
-            <div className="col-lg-3 col-sm-6">
-                <div className="card-style-three mt-50">
-                <div className="icon d-flex align-items-center justify-content-center">
-                    <img src="images/icon/icon_25.svg" alt="" className="tran3s" />
                 </div>
-                <h4 className="title">Platform Audit</h4>
-                <ul className="style-none">
-                    <li>Full Consultation</li>
-                    <li>Code Review</li>
-                    <li>Staff Augmentation</li>
-                    <li>Support</li>
-                </ul>
-                </div>{" "}
-                {/* /.card-style-three */}
             </div>
-            <div className="col-lg-3 col-sm-6">
-                <div className="card-style-three mt-50">
-                <div className="icon d-flex align-items-center justify-content-center">
-                    <img src="images/icon/icon_26.svg" alt="" className="tran3s" />
+            <div className="box-layout mt-40 lg-mt-10">
+                    <div className="row">
+                        <div className="col-xxl-11 m-auto">
+                            <div className="row">
+                                {services.map((service) => (        
+                                    <div className="col-md-4 col-sm-6 d-flex mt-45"
+                                        data-aos="fade-up"
+                                        data-aos-delay={service.fadedelay}
+                                    >
+                                        <div className="card-style-seven">
+                                            <div className="icon d-flex align-items-center justify-content-center">
+                                                <img src={service.serviceIcon} alt="" />
+                                            </div>
+                                            <h4>{service.serviceName}</h4>
+                                            <p>{service.serviceDescription}</p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h4 className="title">e-Commerce</h4>
-                <ul className="style-none">
-                    <li>Custom Checkout Flow</li>
-                    <li>Customer identity</li>
-                    <li>Conversion Rate Optimization</li>
-                    <li>Security Checkup</li>
-                    <li>Data enrty</li>
-                </ul>
-                </div>{" "}
-                {/* /.card-style-three */}
+                {/* <img src="images/shape/shape_39.svg" alt="" className="shapes shape-three" /> */}
+                <img src="images/shape/shape_37.svg" alt="" className="shapes shape-two" />
             </div>
-            <div className="col-lg-3 col-sm-6">
-                <div className="card-style-three mt-50">
-                <div className="icon d-flex align-items-center justify-content-center">
-                    <img src="images/icon/icon_27.svg" alt="" className="tran3s" />
-                </div>
-                <h4 className="title">Marketing</h4>
-                <ul className="style-none">
-                    <li>Microsites</li>
-                    <li>Marketing Automation</li>
-                    <li>SEO &amp; SMM</li>
-                    <li>Lead Generation</li>
-                </ul>
-                </div>{" "}
-                {/* /.card-style-three */}
-            </div>
-            </div>
-        </div>
-        </div>
+        </>
     )
 }

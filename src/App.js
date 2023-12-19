@@ -8,7 +8,7 @@ import { Index } from "./components/ui/major-components/Index";
 
 import "./components/fontawesomeIcons"
 import { Contact } from "./components/ui/major-components/Contact";
-import { Blog } from "./components/ui/major-components/Blog";
+import { Blog } from "./components/ui/major-components/blogs/Blog";
 import { About } from "./components/ui/major-components/About";
 import { BlogDetail } from "./components/ui/major-components/project-blog/ProjectBlogDetail";
 import { Portfolio } from "./components/ui/major-components/Portfoilo";
