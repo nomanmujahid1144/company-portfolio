@@ -13,6 +13,7 @@ import { About } from "./components/ui/major-components/About";
 import { BlogDetail } from "./components/ui/major-components/project-blog/ProjectBlogDetail";
 import { Portfolio } from "./components/ui/major-components/Portfoilo";
 import { PortfoiloDetails } from "./components/ui/major-components/company-portfoilo/PortfoiloDetails";
+import { FAQ } from "./components/ui/major-components/faqs/FAQ";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/blogdetail" element={<BlogDetail/>} />
           <Route path="/portfoilo" element={<Portfolio/>}/>
           <Route path="/portfoilodetail" element={<PortfoiloDetails/>}/>
+          <Route path="/faq" element={<FAQ/>}/>
           
         </Route>    
       </Routes>

@@ -24,7 +24,7 @@ export const ContactIndex = () => {
 							<label>Name*</label>
 							<input
 								type="text"
-								placeholder="Rashed Kabir"
+								placeholder=""
 								name="name"
 								required="required"
 								data-error="Name is required."
@@ -37,7 +37,7 @@ export const ContactIndex = () => {
 							<label>Email*</label>
 							<input
 								type="email"
-								placeholder="rshdkabir@gmail.com"
+								placeholder=""
 								name="email"
 								required="required"
 								data-error="Valid email is required."
@@ -46,9 +46,11 @@ export const ContactIndex = () => {
 							</div>
 						</div>
 						<div className="col-12">
-							<div className="input-group-meta form-group mb-40">
+							<div className="input-group-meta form-group mb-25">
 							<label>Select Service*</label>
+									
 								<select
+									sx={{marginLeft:"100px"}}
 									className="theme-select-menu"
 									placeholder="Choose a Service...."
 									name="category"
@@ -124,8 +126,9 @@ export const ContactIndex = () => {
 						</div>
 						<div className="col-12">
 							<div className="input-group-meta form-group mb-35">
+							<label>Your message*</label>
 							<textarea
-								placeholder="Your message*"
+								placeholder=""
 								name="message"
 								required="required"
 								data-error="Please,leave us a message."
@@ -152,8 +155,8 @@ export const ContactIndex = () => {
 					<div className="text">
 						<h5 className="title">Our Address</h5>
 						<p>
-						1012 Pebda Parkway, Mirpur 2 <br />
-						Dhaka, Bangladesh
+						Hassan Street Fasail Town <br />
+						Lahore Punjab Pakistan
 						</p>
 					</div>
 					</div>{" "}
@@ -167,7 +170,7 @@ export const ContactIndex = () => {
 						<p>
 						Open a chat or give us call at <br />
 						<a href="tel:310.841.5500" className="call">
-							310.841.5500
+							+92-303-7190400
 						</a>
 						</p>
 					</div>

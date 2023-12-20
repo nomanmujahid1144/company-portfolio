@@ -21,22 +21,22 @@ export const Footer = () => {
                         <h5 className="title">Links</h5>
                         <ul className="footer-list style-none">
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="/">Home</a>
                         </li>
-                        <li>
+                        {/* <li>
                             <a href="pricingV1.html">Pricing</a>
+                        </li> */}
+                        <li>
+                            <a href="/about">About us</a>
                         </li>
                         <li>
-                            <a href="about-usV1.html">About us</a>
+                            <a href="/">Service</a>
                         </li>
-                        <li>
-                            <a href="serviceV2.html">Service</a>
-                        </li>
-                        <li>
+                        {/* <li>
                             <a href="serviceV3.html">Features</a>
-                        </li>
+                        </li> */}
                         <li>
-                            <a href="blogV4.html">Blog</a>
+                            <a href="/portfoilo">Portfolio</a>
                         </li>
                         </ul>
                     </div>
@@ -44,17 +44,15 @@ export const Footer = () => {
                         <h5 className="title">Legal</h5>
                         <ul className="footer-list style-none">
                         <li>
-                            <a href="faqV1.html">Terms of use</a>
+                            <a href="/faq">Terms of use</a>
                         </li>
                         <li>
-                            <a href="faqV1.html">Terms &amp; conditions</a>
+                            <a href="/faq">Terms &amp; conditions</a>
                         </li>
                         <li>
-                            <a href="faqV1.html">Privacy policy</a>
+                            <a href="/faq">Privacy policy</a>
                         </li>
-                        <li>
-                            <a href="faqV1.html">Cookie policy</a>
-                        </li>
+                       
                         </ul>
                     </div>
                     <div className="col-lg-4 col-md-6 mb-40">
@@ -81,10 +79,10 @@ export const Footer = () => {
                         <div className="col-lg-4 order-lg-1 mb-15">
                         <ul className="d-flex justify-content-center justify-content-lg-start footer-nav style-none">
                             <li>
-                            <a href="faqV1.html">Privacy &amp; Terms.</a>
+                            <a href="/faq">Privacy &amp; Terms</a>
                             </li>
                             <li>
-                            <a href="contactV1.html">Contact Us</a>
+                            <a href="/contact">Contact Us</a>
                             </li>
                         </ul>
                         </div>
@@ -108,7 +106,7 @@ export const Footer = () => {
                         </ul>
                         </div>
                         <div className="col-lg-4 order-lg-2 mb-15">
-                        <p className="copyright text-center">Copyright @2022 vcamp inc.</p>
+                        <p className="copyright text-center">Copyright @2023 busNet.org</p>
                         </div>
                     </div>
                     </div>

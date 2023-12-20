@@ -72,46 +72,164 @@ export const FAQ = () => {
             isExpanded: false
         }
     ];
-    
+
 
     return (
+
         <main>
-            <section className="hero_single general">
-                <div className="wrapper">
-                    <div className="container">
-                        <i className="pe-7s-help1" />
-                        <h1>FAQ for Bot Benchmark</h1>
-                    </div>
-                </div>
-            </section>
-            {/* /hero_single */}
-            <div className="container margin_60_35">
-                <div className="row">
-                    <div className="col-lg-12" id="faq">
-                        <div className="add_bottom_45 accordion_2" id="payment">
-                            {faqData.map((faq, index) => (
-                                <div className="card" key={index}>
-                                    <div className="card-header" role="tab" >
-                                        <h5 className="mb-0">
-                                            <a data-bs-toggle="collapse" href={`#collapse_${index}`} aria-expanded="false">
-                                                {/* <i className={`indicator ${faq.isExpanded ? 'ti-minus' : 'ti-plus'}`} /> */}
-                                                {faq.question}
-                                            </a>
-                                        </h5>
-                                    </div>
-                                    <div id={`collapse_${index}`} className={`collapse ${faq.isExpanded ? 'show' : ''}`} role="tabpanel" data-bs-parent="#payment">
-                                        <div className="card-body">
-                                            {faq.answer.map((paragraph, idx) => (
-                                                <p key={idx}>{paragraph}</p>
-                                            ))}
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
+            <div className="inside-hero-three">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xl-5 col-md-6">
+                            <h2 className="page-title font-recoleta">Find <span>Answers</span> here.</h2>
+                        </div>
+                        <div className="col-xxl-5 col-md-6 ms-auto">
+                            <p>About our terms and conditions, you can locate and view your question. policies about privacy, etc.</p>
                         </div>
                     </div>
                 </div>
             </div>
+            {/* /hero_single */}
+            <div className="faq-section-two dark-bg mb-70">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xxl-9 col-xl-10 m-auto">
+                            <ul className="nav nav-tabs justify-content-center" role="tablist">
+                                <li className="nav-item">
+                                    <button
+                                        className="nav-link active"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#all"
+                                        role="tab"
+                                    >
+                                        All
+                                    </button>
+                                </li>
+                                <li className="nav-item" role="presentation">
+                                    <button
+                                        className="nav-link"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#userManual"
+                                        role="tab"
+                                    >
+                                        Services & Polices
+                                    </button>
+                                </li>
+                             
+                             
+                                <li className="nav-item" role="presentation">
+                                    <button
+                                        className="nav-link"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#terms-conditions"
+                                        role="tab"
+                                    >
+                                        Terms &amp; Conditions
+                                    </button>
+                                </li>
+                            </ul>
+                            <div className="tab-content mt-110 lg-mt-60">
+                                <div className="tab-pane fade show active" id="all" role="tabpanel">
+                                    <div className="accordion accordion-style-three" id="accordionTwo">
+                                        {faqData.map((faq, index) => (
+                                            <div className="accordion-item" key={index}>
+                                                <div className="accordion-header" id={`heading${index}`}>
+                                                    <button
+                                                        className={`accordion-button ${faq.isExpanded ? '' : 'collapsed'}`}
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target={`#collapse${index}`}
+                                                    >
+                                                        {faq.question}
+                                                    </button>
+                                                </div>
+                                                <div
+                                                    id={`collapse${index}`}
+                                                    className={`accordion-collapse collapse ${faq.isExpanded ? 'show' : ''}`}
+                                                    data-bs-parent="#accordionTwo"
+                                                >
+                                                    <div className="accordion-body">
+                                                        <p>{faq.answer[0]}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                    {/* /.accordion-style-three */}
+                                </div>
+                                <div className="tab-pane fade" id="userManual" role="tabpanel">
+                                    <div
+                                        className="accordion accordion-style-three"
+                                        id="accordionThree"
+                                    >{faqData.map((faq, index) => (
+                                        <div className="accordion-item" key={index}>
+                                            <div className="accordion-header" id={`heading${index}`}>
+                                                <button
+                                                    className={`accordion-button ${faq.isExpanded ? '' : 'collapsed'}`}
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target={`#collapse${index}`}
+                                                >
+                                                    {faq.question}
+                                                </button>
+                                            </div>
+                                            <div
+                                                id={`collapse${index}`}
+                                                className={`accordion-collapse collapse ${faq.isExpanded ? 'show' : ''}`}
+                                                data-bs-parent="#accordionTwo"
+                                            >
+                                                <div className="accordion-body">
+                                                    <p>{faq.answer[0]}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))}
+
+                                    </div>
+
+                                </div>
+
+                                <div className="tab-pane fade" id="terms-conditions" role="tabpanel">
+                                    <div className="accordion accordion-style-three" id="accordionSix">
+
+                                    {faqData.map((faq, index) => (
+                                        <div className="accordion-item" key={index}>
+                                            <div className="accordion-header" id={`heading${index}`}>
+                                                <button
+                                                    className={`accordion-button ${faq.isExpanded ? '' : 'collapsed'}`}
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target={`#collapse${index}`}
+                                                >
+                                                    {faq.question}
+                                                </button>
+                                            </div>
+                                            <div
+                                                id={`collapse${index}`}
+                                                className={`accordion-collapse collapse ${faq.isExpanded ? 'show' : ''}`}
+                                                data-bs-parent="#accordionTwo"
+                                            >
+                                                <div className="accordion-body">
+                                                    <p>{faq.answer[0]}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))}
+                                    </div>
+
+                                </div>
+                            </div>{" "}
+                            {/* /.tab-content */}
+                            <div className="request-faq text-center pt-90 lg-pt-70">
+                                <h2 className="font-recoleta">Don’t get your answer?</h2>
+                                <a href="/contact" className="theme-btn-four ripple-btn">
+                                    CONTACT US
+                                </a>
+                            </div>{" "}
+                            {/* /.request-faq */}
+                        </div>
+                    </div>
+                </div>{" "}
+                {/* /.container */}
+            </div>
+
         </main>
 
     )
