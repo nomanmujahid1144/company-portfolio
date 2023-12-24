@@ -15,9 +15,9 @@ export const Navbar = () => {
 
   const navigationLinks = [
     { text: 'Home', link: '/' },
-    { text: 'Portfolio', link: '/portfoilo' },
-    { text: 'Blog', link: '/blog' },
-    { text: 'About-US', link: '/about' },
+    { text: 'Portfolio', link: '/portfolio' },
+    // { text: 'Blog', link: '/blog' },
+    { text: 'About Us', link: '/about-us' },
     { text: 'Contact', link: '/contact' },
   ];
 

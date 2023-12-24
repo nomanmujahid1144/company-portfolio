@@ -23,11 +23,11 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index path="/" element={<Index />} />
           <Route  path="/contact" element={<Contact/>} />
-          <Route path="/blog" element={<Blog/>} />
-          <Route path="/about" element={<About/>}/>
+          {/* <Route path="/blog" element={<Blog/>} /> */}
+          <Route path="/about-us" element={<About/>}/>
           <Route path="/blogdetail" element={<BlogDetail/>} />
-          <Route path="/portfoilo" element={<Portfolio/>}/>
-          <Route path="/portfoilodetail" element={<PortfoiloDetails/>}/>
+          <Route path="/portfolio" element={<Portfolio/>}/>
+          {/* <Route path="/portfoliodetail" element={<PortfoiloDetails/>}/> */}
           <Route path="/faq" element={<FAQ/>}/>
           
         </Route>    

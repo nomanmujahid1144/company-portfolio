@@ -4,6 +4,7 @@ import portfolioImage_01 from '../../../../assets/portfolios/portfolio_1.png';
 import portfolioImage_02 from '../../../../assets/portfolios/portfolio_2.png';
 import portfolioImage_03 from '../../../../assets/portfolios/portfolio_3.png';
 import portfolioImage_04 from '../../../../assets/portfolios/portfolio_4.png';
+import { Link } from "react-router-dom";
 
 export const SuccessStories = () => {
 
@@ -37,9 +38,9 @@ export const SuccessStories = () => {
                     </h2>
                 </div>
                 <p>Lorem ipsum dolor sit amet cons elit adiel sed do eiusmd</p>
-                    <a href="portfolioV1.html" className="theme-btn-three white-vr">
+                    <Link to="/portfolio" className="theme-btn-three white-vr">
                         View all case study <i className="fas fa-angle-right" />
-                    </a>
+                    </Link>
                 </div>
                 {/*  /.text-wrapper */}
                 <div className='slider-wrapper'>

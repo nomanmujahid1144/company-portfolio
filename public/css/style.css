@@ -4199,7 +4199,7 @@ body .theme-btn-nineteen:hover {color: #fff;}
 .dark-bg .control-nav-two button {color: #fff;}
 .dark-bg .control-nav-two button.mixitup-control-active {background: var(--red-one);}
 .case-study-four .mix, .case-study-four .gap {width: 100%;}
-.case-block-four {padding: 140px 0 125px; margin-top: 90px; z-index: 1;}
+.case-block-four {padding: 50px 0 50px; margin-top: 90px; z-index: 1;}
 .case-block-four .text-wrapper .icon {
   width: 68px;
   height: 68px;
@@ -4611,6 +4611,13 @@ body .theme-btn-nineteen:hover {color: #fff;}
 }
 .card-style-seven:hover {transform: translateY(-5px);}
 .card-style-seven .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background: var(--red-one);
+  margin-bottom: 25px;
+}
+.portfolio-icon{
   width: 60px;
   height: 60px;
   border-radius: 10px;

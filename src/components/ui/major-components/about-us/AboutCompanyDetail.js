@@ -1,19 +1,15 @@
+import InsideBanner from "../company-portfoilo/InsidePageBanner"
 import { Counter } from "../counter/Counter"
 
 export const CompanyDetail = () => {
 
-    const style = {
-        backgroundImage: 'url(images/media/img_46.jpg)'
-    }
     return(
         <>
+			<InsideBanner
+				title="Inside Story"
+				subtitle="We’re empowering WordPress to do great things together."
+			/>
 			<div class="main-page-wrapper">
-				<div className="inside-hero-one hero-spacing">
-					<div className="container">
-					<h2 className="page-title font-recoleta">Inside Story</h2>
-					<p>We’re empowering WordPress to do great things together</p>
-					</div>
-				</div>
 				<div className="vcamp-text-block-five mt-170 lg-mt-120">
 					<div className="container">
 						<div className="row align-items-center">
