@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import MobileNavbar from './MobileNavbar';
 import logo from '../../../../assets/logo/logo.png'
 import useScroll from '../../minor-components/Scroll-Top/useScroll';
+import { Link } from 'react-router-dom';
 
 
 export const Navbar = () => {
@@ -27,9 +28,9 @@ export const Navbar = () => {
         <div className="inner-content">
           <div className="d-flex align-items-center justify-content-between">
             <div className="logo">
-              <a href="index.html">
+              <Link to='/'>
                 <img src={logo} alt="" width={190} />
-              </a>
+              </Link>
             </div>
             <nav className="navbar navbar-expand-lg">
               <button
