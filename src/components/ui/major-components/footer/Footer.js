@@ -59,7 +59,7 @@ export const Footer = () => {
                         <div className="newsletter">
                         <h5 className="title">Newslettert</h5>
                         <p>
-                            Join over <span>68,000</span> people getting our emails
+                            Join Us 
                         </p>
                         <form action="#">
                             <input type="email" placeholder="Enter your email" />

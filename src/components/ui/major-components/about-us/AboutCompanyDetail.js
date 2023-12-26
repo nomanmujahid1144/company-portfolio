@@ -7,7 +7,7 @@ export const CompanyDetail = () => {
         <>
 			<InsideBanner
 				title="Inside Story"
-				subtitle="We’re empowering WordPress to do great things together."
+				subtitle="We’re Navigating Tomorrow's Software Landscape Today globally."
 			/>
 			<div class="main-page-wrapper">
 				<div className="vcamp-text-block-five mt-170 lg-mt-120">
@@ -17,7 +17,7 @@ export const CompanyDetail = () => {
 							<div className="text-wrapper">
 							<div className="title-style-five">
 								<div className="upper-title">About us</div>
-								<h2 className="title">We’ve been helping cutomer globally.</h2>
+								<h2 className="title">We’ve been helping people by Connecting Businesses on the Internet.</h2>
 							</div>
 							</div>
 						</div>
@@ -47,8 +47,7 @@ export const CompanyDetail = () => {
 								>
 								<div className="accordion-body">
 									<p>
-									Our founders Dustin Moskovitz and Justin quis Rosenstein met
-									while leading Engineering team at Facebook.{" "}
+									BusNet is a pioneering software company, crafting cutting-edge e-commerce platforms and web applications globally. With a commitment to innovation, security, and user-centric solutions, we empower businesses and individuals to thrive in the ever-evolving digital landscape.
 									</p>
 								</div>
 								</div>
@@ -74,8 +73,7 @@ export const CompanyDetail = () => {
 								>
 								<div className="accordion-body">
 									<p>
-									Our founders Dustin Moskovitz and Justin quis Rosenstein met
-									while leading Engineering team at Facebook.{" "}
+									Our goal is  committed to becoming a leading force in the software industry, creating solutions that not only meet the needs of today but also anticipate and address the challenges of tomorrow.
 									</p>
 								</div>
 								</div>
@@ -101,8 +99,7 @@ export const CompanyDetail = () => {
 								>
 								<div className="accordion-body">
 									<p>
-									Our founders Dustin Moskovitz and Justin quis Rosenstein met
-									while leading Engineering team at Facebook.{" "}
+									Our vision is to empower individuals and businesses globally, fostering a world where technology enhances, simplifies, and transforms the way people connect, work, and thrive
 									</p>
 								</div>
 								</div>
@@ -120,53 +117,53 @@ export const CompanyDetail = () => {
 							<div className="text-wrapper pt-15 md-pb-50">
 							<div className="title-style-five">
 								<div className="upper-title">Why us?</div>
-								<h2 className="title">Why choose vCamp.</h2>
+								<h2 className="title">Why choose BUSNET.</h2>
 							</div>
 							<p className="text-lg">
-								We helping client to create with our talented expert.
+							"Choose BusNet for unparalleled expertise in developing innovative software solutions. With a commitment to excellence, security, and customer satisfaction, we deliver tailored products that empower businesses and individuals to navigate and succeed in the digital age."
 							</p>
 							</div>{" "}
 							{/* /.text-wrapper */}
 						</div>
 						<div className="col-lg-7">
 							<div className="row">
-							<div className="col-md-6" data-aos="fade-up">
+							<div className="col-md-6">
 								<div className="card-style-six">
 								<div className="icon d-flex align-items-end">
 									<img src="images/icon/icon_46.svg" alt="" />
 								</div>
 								<h4>Friendly Interface</h4>
-								<p>Elit esse cillum dolore eu fugiat nulla pariatur</p>
+								<p>Intuitive, User-Friendly, Seamless</p>
 								</div>{" "}
 								{/* /.card-style-six */}
 							</div>
-							<div className="col-md-6" data-aos="fade-up">
+							<div className="col-md-6">
 								<div className="card-style-six">
 								<div className="icon d-flex align-items-end">
 									<img src="images/icon/icon_47.svg" alt="" />
 								</div>
 								<h4>Quality Service</h4>
-								<p>Elit esse cillum dolore eu fugiat nulla pariatur</p>
+								<p>Reliable, Responsive, Exceptional</p>
 								</div>{" "}
 								{/* /.card-style-six */}
 							</div>
-							<div className="col-md-6" data-aos="fade-up" data-aos-delay={100}>
+							<div className="col-md-6">
 								<div className="card-style-six">
 								<div className="icon d-flex align-items-end">
 									<img src="images/icon/icon_48.svg" alt="" />
 								</div>
 								<h4>Great Pricing</h4>
-								<p>Elit esse cillum dolore eu fugiat nulla pariatur</p>
+								<p>Affordable, Competitive, Value-driven.</p>
 								</div>{" "}
 								{/* /.card-style-six */}
 							</div>
-							<div className="col-md-6" data-aos="fade-up" data-aos-delay={200}>
+							<div className="col-md-6" >
 								<div className="card-style-six">
 								<div className="icon d-flex align-items-end">
 									<img src="images/icon/icon_49.svg" alt="" />
 								</div>
 								<h4>100% Trusted</h4>
-								<p>Elit esse cillum dolore eu fugiat nulla pariatur</p>
+								<p>Unwavering Trustworthiness.</p>
 								</div>{" "}
 								{/* /.card-style-six */}
 							</div>

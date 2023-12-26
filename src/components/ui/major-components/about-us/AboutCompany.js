@@ -6,13 +6,13 @@ export const AboutCompany = () => {
                 <div className="col-xxl-5 col-xl-6 col-lg-7 ms-auto">
                     <div className="text-wrapper pt-0">
                     <div className="title-style-two">
-                        <h3 className="title">
-                        We’ve been helping <span>cutomer</span> globally.
-                        </h3>
+                        <h6 className="title">
+                         
+                        We’re Navigating  Tomorrow's Software Landscape Today globally.
+                        </h6>
                     </div>
                     <p className="meta-info-text text-lg">
-                        Lorem ipsum dolor sit amet, consecte adiel sed do eiusmod tempor
-                        incidi ut labore split.
+                    We’ve been helping people by Connecting Businesses on the Internet
                     </p>
                     <a href="about-usV1.html" className="theme-btn-one ripple-btn">
                         More about us

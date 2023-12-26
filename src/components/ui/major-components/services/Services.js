@@ -67,8 +67,8 @@ export const Services = () => {
                             <div className="row">
                                 {services.map((service) => (        
                                     <div className="col-md-4 col-sm-6 d-flex mt-45"
-                                        data-aos="fade-up"
-                                        data-aos-delay={service.fadedelay}
+                                        // data-aos="fade-up"
+                                        // data-aos-delay={service.fadedelay}
                                     >
                                         <div className="card-style-seven">
                                             <div className="icon d-flex align-items-center justify-content-center">
