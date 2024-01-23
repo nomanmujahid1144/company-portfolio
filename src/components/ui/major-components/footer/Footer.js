@@ -82,7 +82,7 @@ export const Footer = () => {
                             <a href="/faq">Privacy &amp; Terms</a>
                             </li>
                             <li>
-                            <a href="/contact">Contact Us</a>
+                            <a href="/contac-us">Contact Us</a>
                             </li>
                         </ul>
                         </div>

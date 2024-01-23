@@ -75,8 +75,8 @@ export const ContactIndex = () => {
 					<div className="text">
 						<h5 className="title">Our Address</h5>
 						<p>
-						Hassan Street Fasail Town <br />
-						Lahore Punjab Pakistan
+						85 , Great Portland Street London <br />
+						
 						</p>
 					</div>
 					</div>
@@ -88,12 +88,10 @@ export const ContactIndex = () => {
 						<h5 className="title">Contact Info</h5>
 						<p>
 						Open a chat or give us call at <br />
-						<a href="tel:+923047204200" className="call">
-							+92-304-7204200
-						</a> <br />
 						<a href="tel:923037190400" className="call">
-							+92-303-7190400
+							+44-7456-659691
 						</a>
+						
 						</p>
 					</div>
 					</div>

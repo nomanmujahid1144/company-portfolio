@@ -19,7 +19,7 @@ export const Navbar = () => {
     { text: 'Portfolio', link: '/portfolio' },
     // { text: 'Blog', link: '/blog' },
     { text: 'About Us', link: '/about-us' },
-    { text: 'Contact', link: '/contact' },
+    { text: 'Contact', link: '/contact-us' },
   ];
 
 
