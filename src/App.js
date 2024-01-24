@@ -22,9 +22,9 @@ function App() {
         {/* <Route path="*" element={<NotFound />} /> */}
         <Route path="/" element={<Layout />}>
           <Route index path="/" element={<Index />} />
-          <Route  path="/contact" element={<Contact/>} />
+          <Route  path="/contact-us" element={<Contact/>} />
           {/* <Route path="/blog" element={<Blog/>} /> */}
-          <Route path="/about-us" element={<About/>}/>
+          <Route path="/company" element={<About/>}/>
           <Route path="/blogdetail" element={<BlogDetail/>} />
           <Route path="/portfolio" element={<Portfolio/>}/>
           {/* <Route path="/portfoliodetail" element={<PortfoiloDetails/>}/> */}

@@ -1,37 +1,14 @@
+import logo from '../../../../assets/logo/logo.png'
 import React from 'react';
 import './MobileNavbar.css';
 import { useState } from 'react';
 
 const menuItems = [
-  {
-    label: 'Home',
-    subItems: [
-      { label: 'Creative Agency', link: 'index.html' },
-      { label: 'Business', link: 'index-2.html' },
-      { label: 'Agency Minimal', link: 'index-3.html' },
-      // Add more subItems as needed
-    ],
-  },
-  {
-    label: 'Portfolio',
-    subItems: [
-      { label: 'Portfolio Classic', link: 'portfolioV1.html' },
-      { label: 'Portfolio Modern', link: 'portfolioV7.html' },
-      { label: 'Portfolio carousel', link: 'portfolioV24.html' },
-      // Add more subItems as needed
-    ],
-  },
-  {
-    label: 'Pages',
-    subItems: [
-      { label: 'About Minimal', link: 'about-usV1.html' },
-      { label: 'Team Standard', link: 'teamV1.html' },
-      { label: 'Pricing Standard: Dark', link: 'pricingV2.html' },
-      // Add more subItems as needed
-    ],
-  },
-  { label: 'News', link: 'blogV1.html' },
-  { label: 'Contact us', link: 'contactV1.html' },
+  { text: 'Home', link: '/' },
+  { text: 'Portfolio', link: '/portfolio' },
+  // { text: 'Blog', link: '/blog' },
+  { text: 'About Us', link: '/about-us' },
+  { text: 'Contact', link: '/contact' },
 ];
 
 const MobileMenu = ({ isOpen, setIsMenuOpen }) => {
@@ -48,7 +25,7 @@ const MobileMenu = ({ isOpen, setIsMenuOpen }) => {
       <div className="offcanvas-header">
         <div className="logo">
           <a href="index.html">
-            <img src="images/logo/vCamp_01.png" alt="" width="127" />
+            <img src={logo} alt="" width="127" />
           </a>
         </div>
         <button onClick={handleVisibilityOff} type="button" className="close-btn tran3s" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -108,11 +85,13 @@ const MobileMenu = ({ isOpen, setIsMenuOpen }) => {
       <div className="address-block">
         <h4 className="title">Our Address</h4>
         <p>
-          Chowrastar Mirpur- 1210, Sangu <br />River, Dhaka
-        </p>
-        <p>
-          Urgent issue? call us at <br />
-          <a href="tel:310.841.5500">310.841.5500</a>
+          First Floor, 85 Great Portland St, <br />
+          London W1W 7LT,  United Kingdom
+        </p> 
+        <p >
+            <a href="tel:+447456659691" className="call">
+                (+44) 7456 659 691
+            </a>
         </p>
       </div>
 

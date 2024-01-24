@@ -8,11 +8,15 @@ export const WhyChooseCompany = () => {
                     <div className="text-wrapper mb-130 lg-mb-70">
                     <div className="title-style-one">
                         <h2 className="title">
-                        Why <br /> you <span>choose</span> BUSNET.
+                        Why <span>Choose</span> BUSNET.
                         </h2>
                     </div>
                     <p className="meta-info-text text-lg">
-                    Choose BusNet for unparalleled expertise in developing innovative software solutions & Individuals to navigate and succeed in the digital age
+                        We specialize in crafting custom products,
+                        integrating Generative AI, modernizing data,
+                        and optimizing cloud operations. Our tenacity is your advantage,
+                        driving innovation and exceptional digital experiences.
+                        Don't wait, connect with us and unlock the power of your business.
                     </p>
                     <a href="about-usV2.html" className="theme-btn-three">
                         Learn more <i className="fas fa-angle-right" />

@@ -33,11 +33,11 @@ export const SuccessStories = () => {
             <div className="inner-content d-lg-flex align-items-center clearfix overflow-hidden">
                 <div className="text-wrapper">
                 <div className="title-style-one white-vr">
-                    <h2 className="title">
-                    <span>Success</span> sotries from client.
-                    </h2>
+                    <h4 className="title">
+                        Case Studies
+                    </h4>
                 </div>
-                <p>Lorem ipsum dolor sit amet cons elit adiel sed do eiusmd</p>
+                <p>Ready to revolutionize your business? Discover how our award-winning IT solutions empower companies worldwide to achieve explosive growth.</p>
                     <Link to="/portfolio" className="theme-btn-three white-vr">
                         View all case study <i className="fas fa-angle-right" />
                     </Link>

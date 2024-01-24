@@ -18,8 +18,8 @@ export const Navbar = () => {
     { text: 'Home', link: '/' },
     { text: 'Portfolio', link: '/portfolio' },
     // { text: 'Blog', link: '/blog' },
-    { text: 'About Us', link: '/about-us' },
-    { text: 'Contact', link: '/contact' },
+    { text: 'Company', link: '/company' },
+    { text: 'Contact', link: '/contact-us' },
   ];
 
 
@@ -78,10 +78,10 @@ export const Navbar = () => {
               </div>
             </nav>
             <div className="right-widget d-flex align-items-center">
-              <a href="sign-in.html" className="d-flex align-items-center login-btn">
+              {/* <a href="sign-in.html" className="d-flex align-items-center login-btn">
                 <img src="images/icon/icon_01.svg" alt="" />
                 <span>Login</span>
-              </a>
+              </a> */}
               {/* Step 5: Add onClick event to toggle mobile menu */}
               <button
                 className="sidebar-nav-button d-none d-lg-block"

@@ -39,7 +39,7 @@ export const Services = () => {
             fadedelay: 250
         },
         {
-            serviceName: 'Design',
+            serviceName: 'UI/UX Design',
             serviceDescription: 'Crafting visual excellence: Web, Figma, illustrations, Photoshop. Elevate your brand with our creative designs.',
             serviceIcon: design,
             fadedelay: 300

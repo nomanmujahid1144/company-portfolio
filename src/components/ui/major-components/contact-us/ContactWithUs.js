@@ -74,10 +74,10 @@ export const ContactIndex = () => {
 					</div>
 					<div className="text">
 						<h5 className="title">Our Address</h5>
-						<p>
-						Hassan Street Fasail Town <br />
-						Lahore Punjab Pakistan
-						</p>
+						<p >
+							First Floor, 85 Great Portland St, <br />
+							London W1W 7LT,  United Kingdom
+						</p> 
 					</div>
 					</div>
 					<div className="address-block-three d-flex mb-80 lg-mb-40">
@@ -85,15 +85,13 @@ export const ContactIndex = () => {
 						<img src="images/icon/icon_18.svg" alt="" />
 					</div>
 					<div className="text">
-						<h5 className="title">Contact Info</h5>
+						<h5 className="title">Hit us up!</h5>
 						<p>
-						Open a chat or give us call at <br />
-						<a href="tel:+923047204200" className="call">
-							+92-304-7204200
-						</a> <br />
-						<a href="tel:923037190400" className="call">
-							+92-303-7190400
+						Get 24/7 help from our pros <br />
+						<a href="tel:+447456659691" className="call">
+							(+44) 7456 659 691
 						</a>
+						<br />
 						</p>
 					</div>
 					</div>
@@ -102,11 +100,11 @@ export const ContactIndex = () => {
 						<img src="images/icon/icon_19.svg" alt="" />
 					</div>
 					<div className="text">
-						<h5 className="title">Live Support</h5>
+						<h5 className="title">Discover solutions with our sales experts.</h5>
 						<p>
-						Urgent go to live chat portal <br />
+						{/* Urgent go to live chat portal <br /> */}
 						<a href="#" className="webaddress">
-							www.supportlive.com
+							sales@busnet.org
 						</a>
 						</p>
 					</div>
