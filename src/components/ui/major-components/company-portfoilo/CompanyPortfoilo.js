@@ -24,7 +24,7 @@ export const PortfolioIndex = () => {
 									</div>
 									<div className="col-lg-6 col-md-4 d-flex justify-content-md-end justify-content-center">
 										<a
-											href="/contact"
+											href="/contact-us"
 											className="theme-btn-four ripple-btn sm-mt-30"
 										>
 											Let’s Discuss

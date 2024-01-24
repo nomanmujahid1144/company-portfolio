@@ -219,7 +219,7 @@ export const FAQ = () => {
                             {/* /.tab-content */}
                             <div className="request-faq text-center pt-90 lg-pt-70">
                                 <h2 className="font-recoleta">Don’t get your answer?</h2>
-                                <a href="/contact" className="theme-btn-four ripple-btn">
+                                <a href="/contact-us" className="theme-btn-four ripple-btn">
                                     CONTACT US
                                 </a>
                             </div>{" "}

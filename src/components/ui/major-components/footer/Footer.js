@@ -97,6 +97,7 @@ export const Footer = () => {
                     <div className="bottom-footer">
                     <div className="row">
                         <div className="col-lg-4 order-lg-1 mb-15">
+<<<<<<< HEAD
                             <ul className="d-flex justify-content-center justify-content-lg-start footer-nav style-none">
                                 <li>
                                 <a href="/faq">Privacy &amp; Terms</a>
@@ -105,6 +106,16 @@ export const Footer = () => {
                                 <a href="/contact">Contact Us</a>
                                 </li>
                             </ul>
+=======
+                        <ul className="d-flex justify-content-center justify-content-lg-start footer-nav style-none">
+                            <li>
+                            <a href="/faq">Privacy &amp; Terms</a>
+                            </li>
+                            <li>
+                            <a href="/contac-us">Contact Us</a>
+                            </li>
+                        </ul>
+>>>>>>> 8a253526d3d655ee2b8679c48b661ed4ca85bfd6
                         </div>
                         <div className="col-lg-4 order-lg-3 mb-15">
                         <ul className="d-flex justify-content-center justify-content-lg-end social-icon style-none">

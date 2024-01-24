@@ -57,15 +57,15 @@ export const WhyChooseCompany = () => {
                         {/* /.card-style-four */}
                     </div>
                     <div className="col-sm-6" >
-                        <div className="card-style-four mb-130 lg-mb-70">
-                        <div className="icon d-flex align-items-end">
-                            <img src="images/icon/icon_32.svg" alt="" className="tran3s" />
-                        </div>
-                        <h4 className="title">Voice &amp; video call</h4>
-                        <p>Crystal-Clear Communicationr</p>
-                        </div>{" "}
-                        {/* /.card-style-four */}
-                    </div>
+								<div className="card-style-six">
+								<div className="icon d-flex align-items-end">
+									<img src="images/icon/icon_49.svg" alt="" />
+								</div>
+								<h4>100% Trusted</h4>
+								<p>Unwavering Trustworthiness.</p>
+								</div>{" "}
+								{/* /.card-style-six */}
+							</div>
                     </div>
                 </div>
                 </div>

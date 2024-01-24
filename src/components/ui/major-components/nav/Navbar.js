@@ -18,7 +18,11 @@ export const Navbar = () => {
     { text: 'Home', link: '/' },
     { text: 'Portfolio', link: '/portfolio' },
     // { text: 'Blog', link: '/blog' },
+<<<<<<< HEAD
     { text: 'Company', link: '/company' },
+=======
+    { text: 'About Us', link: '/about-us' },
+>>>>>>> 8a253526d3d655ee2b8679c48b661ed4ca85bfd6
     { text: 'Contact', link: '/contact-us' },
   ];
 

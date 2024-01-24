@@ -74,10 +74,10 @@ export const ContactIndex = () => {
 					</div>
 					<div className="text">
 						<h5 className="title">Our Address</h5>
-						<p >
-							First Floor, 85 Great Portland St, <br />
-							London W1W 7LT,  United Kingdom
-						</p> 
+						<p>
+						Hassan Street Fasail Town <br />
+						Lahore Punjab Pakistan
+						</p>
 					</div>
 					</div>
 					<div className="address-block-three d-flex mb-80 lg-mb-40">
@@ -87,11 +87,13 @@ export const ContactIndex = () => {
 					<div className="text">
 						<h5 className="title">Hit us up!</h5>
 						<p>
-						Get 24/7 help from our pros <br />
-						<a href="tel:+447456659691" className="call">
-							(+44) 7456 659 691
+						Open a chat or give us call at <br />
+						<a href="tel:+923047204200" className="call">
+							+92-304-7204200
+						</a> <br />
+						<a href="tel:923037190400" className="call">
+							+92-303-7190400
 						</a>
-						<br />
 						</p>
 					</div>
 					</div>
