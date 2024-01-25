@@ -1,6 +1,9 @@
+import globalImage from '../../../../assets/index-images/globa.png'
+
+
 export const AboutCompany = () => {
     return (
-        <div className="vcamp-text-block-one mt-300 xl-mt-200 md-mt-120">
+        <div className="vcamp-text-block-one mt-150">
             <div className="container">
                 <div className="row">
                 <div className="col-xxl-5 col-xl-6 col-lg-7 ms-auto">
@@ -24,8 +27,8 @@ export const AboutCompany = () => {
                 </div>
             </div>
             <div className="left-img-meta">
-                <img src="images/media/img_04.jpg" alt="" />
-                <img src="images/shape/shape_04.svg" alt="" className="shapes shape-one" />
+                <img src={globalImage} alt="" />
+                <img src={"images/shape/shape_04.svg"} alt="" className="shapes shape-one" />
             </div>
             <img src="images/shape/shape_05.svg" alt="" className="shapes shape-two" />
         </div>

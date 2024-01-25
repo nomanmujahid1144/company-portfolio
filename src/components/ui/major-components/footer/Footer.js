@@ -3,7 +3,6 @@ import useScroll from '../../minor-components/Scroll-Top/useScroll';
 
 export const Footer = () => {
     const { showButton, scrollToTop } = useScroll();
-    const currentYear = new Date().getFullYear();
 
     return (
         <>
@@ -42,7 +41,7 @@ export const Footer = () => {
                             <a href="/company">Company</a>
                         </li>
                         <li>
-                            <a href="/">Service</a>
+                            <a href="#">Service</a>
                         </li>
                         {/* <li>
                             <a href="serviceV3.html">Features</a>
@@ -56,22 +55,22 @@ export const Footer = () => {
                         <h5 className="title">Services</h5>
                         <ul className="footer-list style-none">
                             <li>
-                                <a href="/faq">API Development</a>
+                                <a href="#">API Development</a>
                             </li>
                             <li>
-                                <a href="/faq">Mobile Development</a>
+                                <a href="#">Mobile Development</a>
                             </li>
                             <li>
-                                <a href="/faq">Web Development</a>
+                                <a href="#">Web Development</a>
                             </li>
                             <li>
-                                <a href="/faq">AI & Machine Learning</a>
+                                <a href="#">AI & Machine Learning</a>
                             </li>
                             <li>
-                                <a href="/faq">Marketing</a>
+                                <a href="#">Marketing</a>
                             </li>
                             <li>
-                                <a href="/faq">UI/UX Design</a>
+                                <a href="#">UI/UX Design</a>
                             </li>
                        
                         </ul>
@@ -97,41 +96,30 @@ export const Footer = () => {
                     <div className="bottom-footer">
                     <div className="row">
                         <div className="col-lg-4 order-lg-1 mb-15">
-<<<<<<< HEAD
                             <ul className="d-flex justify-content-center justify-content-lg-start footer-nav style-none">
                                 <li>
-                                <a href="/faq">Privacy &amp; Terms</a>
+                                <a href="#">Privacy &amp; Terms</a>
                                 </li>
                                 <li>
-                                <a href="/contact">Contact Us</a>
+                                <a href="/contact-us">Contact Us</a>
                                 </li>
                             </ul>
-=======
-                        <ul className="d-flex justify-content-center justify-content-lg-start footer-nav style-none">
-                            <li>
-                            <a href="/faq">Privacy &amp; Terms</a>
-                            </li>
-                            <li>
-                            <a href="/contac-us">Contact Us</a>
-                            </li>
-                        </ul>
->>>>>>> 8a253526d3d655ee2b8679c48b661ed4ca85bfd6
                         </div>
                         <div className="col-lg-4 order-lg-3 mb-15">
                         <ul className="d-flex justify-content-center justify-content-lg-end social-icon style-none">
-                            <li>
+                            {/* <li>
                             <a href="#">
                                 <i className="fab fa-facebook-f" />
                             </a>
-                            </li>
+                            </li> */}
                             <li>
-                            <a href="#">
+                            <a href="https://www.instagram.com/busnet.limited">
                                 <i className="fab fa-instagram" />
                             </a>
                             </li>
                             <li>
-                            <a href="#">
-                                <i className="fab fa-pinterest-p" />
+                            <a href="">
+                                <i className="fab fa-linkedin" />
                             </a>
                             </li>
                         </ul>
