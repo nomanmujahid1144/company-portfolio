@@ -25,7 +25,7 @@ export const WhyChooseCompany = () => {
                     {/* /.text-wrapper */}
                 </div>
                 <div className="col-lg-6 ms-auto">
-                    <div className="row gx-5">
+                    <div className="row">
                     <div className="col-sm-6">
                         <div className="card-style-four mb-130 lg-mb-70">
                         <div className="icon d-flex align-items-end">
