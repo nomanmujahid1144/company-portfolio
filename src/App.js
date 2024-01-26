@@ -19,17 +19,13 @@ import { FAQ } from "./components/ui/major-components/faqs/FAQ";
 function App() {
   return (
       <Routes >
-        {/* <Route path="*" element={<NotFound />} /> */}
         <Route path="/" element={<Layout />}>
           <Route index path="/" element={<Index />} />
           <Route  path="/contact-us" element={<Contact/>} />
-          {/* <Route path="/blog" element={<Blog/>} /> */}
           <Route path="/company" element={<About/>}/>
           <Route path="/blogdetail" element={<BlogDetail/>} />
           <Route path="/portfolio" element={<Portfolio/>}/>
-          {/* <Route path="/portfoliodetail" element={<PortfoiloDetails/>}/> */}
           <Route path="/faq" element={<FAQ/>}/>
-          
         </Route>    
       </Routes>
   );

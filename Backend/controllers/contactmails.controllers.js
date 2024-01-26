@@ -50,7 +50,7 @@ exports.submitResponse = async (req, res, next) => {
                                         <td style="padding: 15px 24px 0; color: #8492a6;">
                                             <span>Your Message</span>
                                             <br />
-                                            ${contact?.message}
+                                            ${contact.message}
                                         </td>
                                     </tr>
                                     <tr>
@@ -92,7 +92,7 @@ exports.submitResponse = async (req, res, next) => {
             // send mail with defined transport object
             const mailOptions = {
                 from: `"${process.env.SENDER_NAME}" <${process.env.EMAIL}>`, // sender address
-                to: contact?.emailId, // list of receivers
+                to: contact.emailId, // list of receivers
                 subject: "Response From BOTBenchmark ✔", // Subject line
                 html: output, // html body
             };
