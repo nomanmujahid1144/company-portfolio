@@ -9,9 +9,9 @@ export const Services = () => {
 
     const services = [
         {
-            serviceName: 'API Integration',
-            serviceDescription: 'Maximize connectivity and streamline operations with our expert API Integration. Tailored solutions for seamless efficiency and enhanced business performance.',
-            serviceIcon: apiIntegration,
+            serviceName: 'Web Development',
+            serviceDescription: 'Transform your online presence with our expert Web Development. Tailored solutions for seamless user experiences, from concept to execution.',
+            serviceIcon: webDevelopment,
             fadedelay: 0
         },
         {
@@ -21,9 +21,9 @@ export const Services = () => {
             fadedelay: 100
         },
         {
-            serviceName: 'Web Development',
-            serviceDescription: 'Transform your online presence with our expert Web Development. Tailored solutions for seamless user experiences, from concept to execution.',
-            serviceIcon: webDevelopment,
+            serviceName: 'API Integration',
+            serviceDescription: 'Maximize connectivity and streamline operations with our expert API Integration. Tailored solutions for seamless efficiency and enhanced business performance.',
+            serviceIcon: apiIntegration,
             fadedelay: 150
         },
         {
@@ -53,7 +53,7 @@ export const Services = () => {
                 <div className="row">
                 <div
                     className="col-xxl-7 col-xl-9 col-lg-7 col-md-9 m-auto"
-                    data-aos="fade-up"
+                    // data-aos="fade-up"
                 >
                     <div className="title-style-five text-center">
                     <h2 className="title">We provide industrial solution also</h2>

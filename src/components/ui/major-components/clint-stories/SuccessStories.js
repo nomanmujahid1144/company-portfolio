@@ -4,6 +4,7 @@ import portfolioImage_01 from '../../../../assets/portfolios/portfolio_1.png';
 import portfolioImage_02 from '../../../../assets/portfolios/portfolio_2.png';
 import portfolioImage_03 from '../../../../assets/portfolios/portfolio_3.png';
 import portfolioImage_04 from '../../../../assets/portfolios/portfolio_4.png';
+import portfolioImage_05 from '../../../../assets/portfolios/portfolio_5.png';
 import { Link } from "react-router-dom";
 
 export const SuccessStories = () => {
@@ -25,6 +26,14 @@ export const SuccessStories = () => {
             portfolioImage: portfolioImage_04,
             portfolioLink: 'vipinfluencers.com'
         },
+        {
+            portfolioImage: portfolioImage_04,
+            portfolioLink: 'vipinfluencers.com'
+        },
+        {
+            portfolioImage: portfolioImage_05,
+            portfolioLink: ''
+        },
     ]
 
     return (
@@ -38,7 +47,7 @@ export const SuccessStories = () => {
                     </h4>
                 </div>
                 <p>Ready to revolutionize your business? Discover how our award-winning IT solutions empower companies worldwide to achieve explosive growth.</p>
-                    <Link to="/portfolio" className="theme-btn-three white-vr">
+                    <Link to="/case-studies" className="theme-btn-three white-vr">
                         View all case study <i className="fas fa-angle-right" />
                     </Link>
                 </div>

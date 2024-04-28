@@ -1202,7 +1202,9 @@ body .theme-btn-nineteen:hover {color: #fff;}
 .theme-main-menu.theme-menu-two.fixed .inner-content {padding: 0;}
 .theme-menu-two .right-widget .contact-btn {
   font-family: 'gorditamedium';
-  width: 160px;
+  width: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
   line-height: 44px;
   font-size: 17px;
   text-align: center;
@@ -1890,7 +1892,7 @@ body .theme-btn-nineteen:hover {color: #fff;}
 }
 .feedback_slider_two {
   max-width: 1590px;
-  margin: 125px -30px 0 auto;
+  margin: 50px auto 0;
 }
 .testimonial-block-one {
   background: #fff;
@@ -4937,9 +4939,11 @@ body .theme-btn-nineteen:hover {color: #fff;}
 .blog-details-one .blog-details-content {border-bottom: 1px solid #E7E7E7; padding-bottom: 10px;}
 .blog-details-one .blog-details-content .image-meta {margin-bottom: 54px;}
 .blog-details-one .blog-details-content p {
-  font-size: 17px;
+  font-size: 14px;
   line-height: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 0px;
+  font-weight: 600;
+  color: #7987a1;
 }
 .blog-details-one .blog-details-content h4 {
   color: #303030;

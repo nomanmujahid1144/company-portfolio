@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom"
-import { useAlert } from "react-alert";
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import InputField from '../../minor-components/fields/InputField';
 import TextField from '../../minor-components/fields/TextField';
 import { sendContactUsMessage } from "../../../../redux/Actions/UserActions"
+import { toast } from 'react-toastify';
 
 
 export const ContactIndex = () => {
@@ -15,7 +15,6 @@ export const ContactIndex = () => {
     const [value, setValue] = useState();
     const dispatch = useDispatch();
     const navigate = useNavigate();
-	const alert = useAlert();
 
 	const [credentials, setcredentials] = useState({
         fullName: "",
@@ -28,21 +27,7 @@ export const ContactIndex = () => {
 	const handleSubmit = async (e) => {
         e.preventDefault();
         const { fullName, companyName, email,  message } = credentials;
-        setcredentials({
-			fullName: '',
-			companyName: '',
-            email: '',
-            message: "",
-		})
-		setValue('');
-		let contact = {
-			fullName,
-			companyName,
-			value,
-			email,
-			message
-		}
-        dispatch(sendContactUsMessage(fullName, companyName, value, email, message, navigate, alert));
+        dispatch(sendContactUsMessage(fullName, companyName, value, email, message, navigate, toast, setcredentials, setValue));
     };
 
 
@@ -162,7 +147,7 @@ export const ContactIndex = () => {
 									<h5 className="title">Our Address</h5>
 									<p >
 										First Floor, 85 Great Portland St, <br />
-										London W1W 7LT,  United Kingdom
+										London,  United Kingdom
 									</p> 
 								</div>
 							</div>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import globalImage from '../../../../assets/index-images/globa.png'
 
 
@@ -15,13 +16,13 @@ export const AboutCompany = () => {
                         </h6>
                     </div>
                     <p className="meta-info-text text-lg">
-                    At BusNet Limited, we take pride in the driving force behind our success – our dedicated team of passionate individuals who are committed to pushing the boundaries of innovation. Our software development team stands as a testament to excellence, collaboration, and a relentless pursuit of perfection.
+                    At BUSNET Limited, we take pride in the driving force behind our success – our dedicated team of passionate individuals who are committed to pushing the boundaries of innovation. Our software development team stands as a testament to excellence, collaboration, and a relentless pursuit of perfection.
 
 
                     </p>
-                    <a href="about-usV1.html" className="theme-btn-one ripple-btn">
+                    <Link to="/about-us" className="theme-btn-one ripple-btn">
                         More about us
-                    </a>
+                    </Link>
                     </div>
                 </div>
                 </div>

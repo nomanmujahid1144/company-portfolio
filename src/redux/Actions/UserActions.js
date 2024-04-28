@@ -1,7 +1,7 @@
 import { axiosInstance } from "../../constants/axiosInstance";
 import { selectProgressBarState } from "./ProgressBarActions";
 
-export const sendContactUsMessage = (fullName, companyName, value, email, message, navigate, alert) => {
+export const sendContactUsMessage = (fullName, companyName, value, email, message, navigate, toast, setcredentials, setValue) => {
   return async (dispatch) => {
     dispatch(selectProgressBarState(true));
     const res = await axiosInstance.post("/api/v1/contacts/sendcontactmail", {
@@ -13,7 +13,15 @@ export const sendContactUsMessage = (fullName, companyName, value, email, messag
     });
     if (res.data.success) {
       dispatch(selectProgressBarState(false));
-        alert.show("Message Send Successfully");
+      setcredentials({
+        fullName: '',
+        companyName: '',
+        subject: '',
+        email: '',
+        message: "",
+      })
+      setValue('');
+      toast("Message Send Successfully");
     } else {
         dispatch(selectProgressBarState(false));
         alert.show(res.data.message.toString());

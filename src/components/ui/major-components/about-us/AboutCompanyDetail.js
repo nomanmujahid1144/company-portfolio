@@ -1,5 +1,10 @@
 import InsideBanner from "../company-portfoilo/InsidePageBanner"
-import { Counter } from "../counter/Counter"
+import { Counter } from "../counter/Counter";
+import customizedSolution from '../../../../assets/icons/customized_solution.svg';
+import customerSatisfaction from '../../../../assets/icons/Customer_Satisfaction.svg';
+import strategyPlanning from '../../../../assets/icons/strategy-planning.svg';
+import timelyDelivered from '../../../../assets/icons/timely_delivered.svg';
+import { Link } from 'react-router-dom';
 
 export const CompanyDetail = () => {
 
@@ -47,7 +52,7 @@ export const CompanyDetail = () => {
 								>
 								<div className="accordion-body">
 									<p>
-									BusNet is a pioneering software company, crafting cutting-edge e-commerce platforms and web applications globally. With a commitment to innovation, security, and user-centric solutions, we empower businesses and individuals to thrive in the ever-evolving digital landscape.
+									BUSNET is a pioneering software company, crafting cutting-edge e-commerce platforms and web applications globally. With a commitment to innovation, security, and user-centric solutions, we empower businesses and individuals to thrive in the ever-evolving digital landscape.
 									</p>
 								</div>
 								</div>
@@ -110,7 +115,7 @@ export const CompanyDetail = () => {
 					</div>
 				</div>
 				<Counter />
-				<div className="vcamp-feature-section-six mt-150 lg-mt-70">
+				<div className="vcamp-feature-section-six overflow-hidden mt-150 lg-mt-70">
 					<div className="container">
 						<div className="row gx-xl-5">
 						<div className="col-lg-5">
@@ -120,7 +125,9 @@ export const CompanyDetail = () => {
 								<h2 className="title">Why choose BUSNET.</h2>
 							</div>
 							<p className="text-lg">
-							"Choose BusNet for unparalleled expertise in developing innovative software solutions. With a commitment to excellence, security, and customer satisfaction, we deliver tailored products that empower businesses and individuals to navigate and succeed in the digital age."
+								Unlock Your Business Potential with Our Custom Solutions.
+                                Experience Innovation and Exceptional Digital Solutions.
+                                Connect with Us Today.
 							</p>
 							</div>{" "}
 							{/* /.text-wrapper */}
@@ -130,40 +137,40 @@ export const CompanyDetail = () => {
 							<div className="col-md-6">
 								<div className="card-style-six">
 								<div className="icon d-flex align-items-end">
-									<img src="images/icon/icon_46.svg" alt="" />
+									<img src={strategyPlanning} alt="" />
 								</div>
-								<h4>Friendly Interface</h4>
-								<p>Intuitive, User-Friendly, Seamless</p>
+								<h4>Strategic Planning</h4>
+								<p>Meticulously crafted strategies tailored to your goals.</p>
 								</div>{" "}
 								{/* /.card-style-six */}
 							</div>
 							<div className="col-md-6">
 								<div className="card-style-six">
 								<div className="icon d-flex align-items-end">
-									<img src="images/icon/icon_47.svg" alt="" />
+									<img src={customizedSolution} alt="" />
 								</div>
-								<h4>Quality Service</h4>
-								<p>Reliable, Responsive, Exceptional</p>
+								<h4>Customized Solutions</h4>
+								<p>Tailored solutions for unique business needs.</p>
 								</div>{" "}
 								{/* /.card-style-six */}
 							</div>
 							<div className="col-md-6">
 								<div className="card-style-six">
 								<div className="icon d-flex align-items-end">
-									<img src="images/icon/icon_48.svg" alt="" />
+									<img src={timelyDelivered} alt="" />
 								</div>
-								<h4>Great Pricing</h4>
-								<p>Affordable, Competitive, Value-driven.</p>
+								<h4>Timely Delivery</h4>
+								<p>Prompt delivery without compromising quality.</p>
 								</div>{" "}
 								{/* /.card-style-six */}
 							</div>
 							<div className="col-md-6" >
 								<div className="card-style-six">
 								<div className="icon d-flex align-items-end">
-									<img src="images/icon/icon_49.svg" alt="" />
+									<img src={customerSatisfaction} alt="" />
 								</div>
-								<h4>100% Trusted</h4>
-								<p>Unwavering Trustworthiness.</p>
+								<h4>Client Satisfaction</h4>
+								<p>Your success is our priority.</p>
 								</div>{" "}
 								{/* /.card-style-six */}
 							</div>

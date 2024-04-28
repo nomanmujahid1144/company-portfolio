@@ -1,11 +1,14 @@
+import { Link } from 'react-router-dom';
 import logo from '../../../../assets/logo/whiteLogo.png'
 import useScroll from '../../minor-components/Scroll-Top/useScroll'; 
+import { ContactBanner } from '../contacts/ContactBanner';
 
 export const Footer = () => {
     const { showButton, scrollToTop } = useScroll();
 
     return (
         <>
+            <ContactBanner />
             <footer className="vcamp-footer-two dark-footer pt-120 lg-pt-100">
                 <div className="container">
                     <div className="row">
@@ -14,12 +17,12 @@ export const Footer = () => {
                             <a href="index.html">
                                 <img src={logo} alt="" width={197} />
                             </a>
-                            <p className='text-white'>BusNet builds, designs, and delivers powerful solutions to streamline operations and boost growth.</p>    
+                            <p className='text-white'>BUSNET builds, designs, and delivers powerful solutions to streamline operations and boost growth.</p>    
                         </div>
                         <div className="logo">
                                 <p className='text-white' style={{fontSize : '15px', marginTop: '3rem'}}>
                                     First Floor, 85 Great Portland St, <br />
-                                    London W1W 7LT,  United Kingdom
+                                    London,  United Kingdom
                                 </p>
                                 <p className='footer-list style-none'>
                                     <a href="tel:+447456659691" className="call">
@@ -31,24 +34,18 @@ export const Footer = () => {
                     <div className="col-lg-3 col-md-3 col-sm-6 mb-40">
                         <h5 className="title">Company</h5>
                         <ul className="footer-list style-none">
-                        <li>
-                            <a href="/">Home</a>
-                        </li>
-                        {/* <li>
-                            <a href="pricingV1.html">Pricing</a>
-                        </li> */}
-                        <li>
-                            <a href="/company">Company</a>
-                        </li>
-                        <li>
-                            <a href="#">Service</a>
-                        </li>
-                        {/* <li>
-                            <a href="serviceV3.html">Features</a>
-                        </li> */}
-                        <li>
-                            <a href="/portfoilo">Portfolio</a>
-                        </li>
+                            <li>
+                                <Link to="/">Home</Link>
+                            </li>
+                            <li>
+                                <Link to="/about-us">About</Link>
+                            </li>
+                            <li>
+                                <Link to="#">Service</Link>
+                            </li>
+                            <li>
+                                <Link to="/contact-us">Contact Us</Link>
+                            </li>
                         </ul>
                     </div>
                     <div className="col-lg-3 col-md-3 col-sm-6 mb-40">
@@ -67,7 +64,7 @@ export const Footer = () => {
                                 <a href="#">AI & Machine Learning</a>
                             </li>
                             <li>
-                                <a href="#">Marketing</a>
+                                <a href="#">Digital Marketing</a>
                             </li>
                             <li>
                                 <a href="#">UI/UX Design</a>
@@ -75,21 +72,19 @@ export const Footer = () => {
                        
                         </ul>
                     </div>
-                    {/* <div className="col-lg-4 col-md-6 mb-40">
+                    <div className="col-lg-3 col-md-6 mb-40">
                         <div className="newsletter">
-                        <h5 className="title">Newslettert</h5>
-                        <p>
-                            Join Us 
-                        </p>
-                        <form action="#">
-                            <input type="email" placeholder="Enter your email" />
-                            <button className="dark-btn">Sign Up</button>
-                        </form>
-                        <div className="info">
-                            We only send interesting and relevant emails.
+                                <h5 className="title">Resources</h5>
+                                <ul className="footer-list style-none">
+                                    <li>
+                                        <Link to="/case-studies">Case Studies</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/privacy-policy">Privacy Policy</Link>
+                                    </li>
+                                </ul>
                         </div>
-                        </div>
-                    </div> */}
+                    </div>
                     </div>
                 </div>
                 <div className="container">

@@ -3,6 +3,7 @@ import { SuccessStories } from "./clint-stories/SuccessStories"
 import { Counter } from "./counter/Counter"
 import { HeroIndex } from "./hero-section-index/Hero"
 import { Services } from "./services/Services"
+import { Testimonials } from "./testimonials/Index"
 import { WhyChooseCompany } from "./why-choose/WhyChooseComany"
 
 export const Index = () => {
@@ -13,6 +14,7 @@ export const Index = () => {
             <AboutCompany />
             <Counter />
             <SuccessStories />
+            <Testimonials />
             <WhyChooseCompany />
         </>
     )

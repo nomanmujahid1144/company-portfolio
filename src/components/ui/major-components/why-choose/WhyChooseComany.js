@@ -1,6 +1,12 @@
+import customizedSolution from '../../../../assets/icons/customized_solution.svg';
+import customerSatisfaction from '../../../../assets/icons/Customer_Satisfaction.svg';
+import strategyPlanning from '../../../../assets/icons/strategy-planning.svg';
+import timelyDelivered from '../../../../assets/icons/timely_delivered.svg';
+import { Link } from 'react-router-dom';
+
 export const WhyChooseCompany = () => {
     return (
-        <div className="vcamp-feature-section-four mt-250 lg-mt-150 md-mt-120">
+        <div className="vcamp-feature-section-four mt-110 lg-mt-110 md-mt-110">
             <img src="images/shape/shape_05.svg" alt="" className="shapes shape-one" />
             <div className="container">
                 <div className="row align-items-center">
@@ -12,57 +18,54 @@ export const WhyChooseCompany = () => {
                         </h2>
                     </div>
                     <p className="meta-info-text text-lg">
-                        We specialize in crafting custom products,
-                        integrating Generative AI, modernizing data,
-                        and optimizing cloud operations. Our tenacity is your advantage,
-                        driving innovation and exceptional digital experiences.
-                        Don't wait, connect with us and unlock the power of your business.
+                                    Unlock Your Business Potential with Our Custom Solutions.
+                                    Experience Innovation and Exceptional Digital Solutions.
+                                    Connect with Us Today.
                     </p>
-                    <a href="about-usV2.html" className="theme-btn-three">
-                        Learn more <i className="fas fa-angle-right" />
-                    </a>
+                    <Link to="/contact-us" className="theme-btn-three">
+                        Connect with Us <i className="fas fa-angle-right" />
+                    </Link>
                     </div>{" "}
-                    {/* /.text-wrapper */}
                 </div>
                 <div className="col-lg-6 ms-auto">
                     <div className="row">
                     <div className="col-sm-6">
                         <div className="card-style-four mb-130 lg-mb-70">
                         <div className="icon d-flex align-items-end">
-                            <img src="images/icon/icon_29.svg" alt="" className="tran3s" />
+                            <img src={strategyPlanning} alt="" className="tran3s" />
                         </div>
-                        <h4 className="title">File sharing</h4>
-                        <p>Effortless File Sharing</p>
+                        <h4 className="title">Strategic Planning</h4>
+                        <p>Meticulously crafted strategies tailored to your goals.</p>
                         </div>{" "}
                         {/* /.card-style-four */}
                     </div>
                     <div className="col-sm-6" >
                         <div className="card-style-four mb-130 lg-mb-70">
                         <div className="icon d-flex align-items-end">
-                            <img src="images/icon/icon_30.svg" alt="" className="tran3s" />
+                            <img src={customizedSolution} alt="" className="tran3s" />
                         </div>
-                        <h4 className="title">Team Managment</h4>
-                        <p>Streamlined Team Managementr</p>
+                        <h4 className="title">Customized Solutions</h4>
+                        <p>Tailored solutions for unique business needs.</p>
                         </div>{" "}
                         {/* /.card-style-four */}
                     </div>
                     <div className="col-sm-6" >
                         <div className="card-style-four mb-130 lg-mb-70">
                         <div className="icon d-flex align-items-end">
-                            <img src="images/icon/icon_31.svg" alt="" className="tran3s" />
+                            <img src={timelyDelivered} alt="" className="tran3s" />
                         </div>
-                        <h4 className="title">Cloud storage</h4>
-                        <p>Secure Cloud Storage</p>
+                        <h4 className="title">Timely Delivery</h4>
+                        <p>Prompt delivery without compromising quality.</p>
                         </div>{" "}
                         {/* /.card-style-four */}
                     </div>
                     <div className="col-sm-6" >
 								<div className="card-style-six">
 								<div className="icon d-flex align-items-end">
-									<img src="images/icon/icon_49.svg" alt="" />
+									<img src={customerSatisfaction} alt="" />
 								</div>
-								<h4>100% Trusted</h4>
-								<p>Unwavering Trustworthiness.</p>
+								<h4>Client Satisfaction</h4>
+								<p>Your success is our priority.</p>
 								</div>{" "}
 								{/* /.card-style-six */}
 							</div>

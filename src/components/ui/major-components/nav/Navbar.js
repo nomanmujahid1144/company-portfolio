@@ -16,20 +16,20 @@ export const Navbar = () => {
 
   const navigationLinks = [
     { text: 'Home', link: '/' },
-    { text: 'Portfolio', link: '/portfolio' },
-    { text: 'Company', link: '/company' },
+    { text: 'Case Studies', link: '/case-studies' },
+    { text: 'About', link: '/about-us' },
     { text: `Let's Connect`, link: '/contact-us' },
   ];
 
 
   return (<>
-      <header className={`theme-main-menu sticky-menu theme-menu-one ${showButton ? 'fixed' : ''}`}>
+      <header className={`theme-main-menu sticky-menu theme-menu-two ${showButton ? 'fixed' : ''}`}>
         <div className="inner-content">
           <div className="d-flex align-items-center justify-content-between">
             <div className="logo">
-              <Link to='/'>
-                <img src={logo} alt="" width={190} />
-              </Link>
+                <Link to='/'>
+                  <img src={logo} alt="busnet-limited-logo" width={190} />
+                </Link>
             </div>
           <nav className="navbar navbar-expand-lg">
                 <button
@@ -49,7 +49,7 @@ export const Navbar = () => {
               {isMobileMenuOpen && 
                 <div className="logo">
                   <Link to='/'>
-                    <img src={logo} alt="" width={190} />
+                    <img src={logo} alt="busnet-limited-logo" width={190} />
                   </Link>
                 </div>
               }
@@ -67,7 +67,7 @@ export const Navbar = () => {
                     <h4 className="title">Our Address</h4>
                       <p >
                         First Floor, 85 Great Portland St, <br />
-                        London W1W 7LT,  United Kingdom
+                        London,  United Kingdom
                       </p> 
                     <p>
                       Get 24/7 help from our pros <br />
@@ -79,20 +79,13 @@ export const Navbar = () => {
                   </div>
                 </div>
               </div>
-            </nav>
-            {/* <div className="right-widget d-flex align-items-center">
-              <a href="sign-in.html" className="d-flex align-items-center login-btn">
-                <img src="images/icon/icon_01.svg" alt="" />
-                <span>Login</span>
-              </a>
-              <button
-                className="sidebar-nav-button d-none d-lg-block"
-                type="button"
-                onClick={toggleMobileMenu}
-              >
-                <img src="images/icon/icon_02.svg" alt="" />
-              </button>
-            </div> */}
+          </nav>
+          <div class="right-widget d-flex align-items-center">
+            {/* <button class="menu-search-btn tran3s" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="bi bi-search"></i></button> */}
+            <Link to="/contact-us" class="tran3s contact-btn d-none d-sm-block">
+              <span>Book Free Strategy Call</span>
+            </Link>
+          </div>
           </div>
         </div>
       </header>
