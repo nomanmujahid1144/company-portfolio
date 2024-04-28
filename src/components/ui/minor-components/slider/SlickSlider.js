@@ -169,7 +169,9 @@ var TestimonialSettings = {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
     speed: 500,
+    autoplaySpeed: 2000,
     prevArrow: <TestomonialPrevArrow display="block" isPre={true} />, // Hide the previous arrow
     nextArrow: <TestomonialNextArrow display="block" isNext={true} />, // Hide the next arrow
     appendDots: dots => (
@@ -185,7 +187,9 @@ var TestimonialSettings = {
                 centerMode: true,
                 infinite: true,
                 slidesToShow: 3,
+                autoplay: true,
                 speed: 500,
+                autoplaySpeed: 2000,
             }
         },
         {
@@ -195,7 +199,9 @@ var TestimonialSettings = {
                 centerMode: true,
                 infinite: true,
                 slidesToShow: 2,
+                autoplay: true,
                 speed: 500,
+                autoplaySpeed: 2000,
             }
         },
         {
@@ -205,7 +211,9 @@ var TestimonialSettings = {
                 centerMode: false,
                 infinite: true,
                 slidesToShow: 2,
+                autoplay: true,
                 speed: 500,
+                autoplaySpeed: 2000,
             }
         },
         {
@@ -215,7 +223,9 @@ var TestimonialSettings = {
                 centerMode: true,
                 infinite: true,
                 slidesToShow: 1,
+                autoplay: true,
                 speed: 500,
+                autoplaySpeed: 2000,
             }
         }
     ]
