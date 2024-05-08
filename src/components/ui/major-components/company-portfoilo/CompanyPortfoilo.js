@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { PortfoiloDetails } from "./PortfoiloDetails"
 
 export const PortfolioIndex = () => {
@@ -23,12 +24,9 @@ export const PortfolioIndex = () => {
 										</h2>
 									</div>
 									<div className="col-lg-6 col-md-4 d-flex justify-content-md-end justify-content-center">
-										<a
-											href="/contact-us"
-											className="theme-btn-four ripple-btn sm-mt-30"
-										>
+										<Link to="/contact-us" className="theme-btn-four ripple-btn sm-mt-30">
 											Let’s Discuss
-										</a>
+										</Link>
 									</div>
 								</div>
 							</div>

@@ -1,12 +1,15 @@
-import { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from "react-redux";
+import { useState } from 'react';
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom"
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import InputField from '../../minor-components/fields/InputField';
 import TextField from '../../minor-components/fields/TextField';
-import { sendContactUsMessage } from "../../../../redux/Actions/UserActions"
+import { sendContactUsMessage } from "../../../../redux/Actions/UserActions";
 import { toast } from 'react-toastify';
+import icon_17 from '../../../../assets/icons/icon_17.svg';
+import icon_18 from '../../../../assets/icons/icon_18.svg';
+import icon_19 from '../../../../assets/icons/icon_19.svg';
 
 
 export const ContactIndex = () => {
@@ -141,7 +144,7 @@ export const ContactIndex = () => {
 						<div className="col-lg-5 col-md-6 ms-auto">
 							<div className="address-block-three d-flex mb-80 lg-mb-40">
 								<div className="icon">
-									<img src="images/icon/icon_17.svg" alt="" />
+									<img src={icon_17} alt="" />
 								</div>
 								<div className="text">
 									<h5 className="title">Our Address</h5>
@@ -153,7 +156,7 @@ export const ContactIndex = () => {
 							</div>
 							<div className="address-block-three d-flex mb-80 lg-mb-40">
 								<div className="icon">
-									<img src="images/icon/icon_18.svg" alt="" />
+									<img src={icon_18} alt="" />
 								</div>
 								<div className="text">
 									<h5 className="title">Hit us up!</h5>
@@ -168,7 +171,7 @@ export const ContactIndex = () => {
 								</div>
 							<div className="address-block-three d-flex">
 								<div className="icon">
-									<img src="images/icon/icon_19.svg" alt="" />
+									<img src={icon_19} alt="" />
 								</div>
 								<div className="text">
 									<h5 className="title">Discover solutions with our sales experts.</h5>

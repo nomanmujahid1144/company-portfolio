@@ -1,7 +1,7 @@
-.slick-next:before {
+.slick-next i {
     content: '\f285';
 }
-.slick-prev::before {
+.slick-prev i {
     content: "\f284";
 }
 .slick-arrow{
@@ -34,7 +34,7 @@
     vertical-align: -.125em;
     -webkit-font-smoothing: antialiased;
     position: relative;
-    top: -21px;
+    top: -24px;
     left: -6px;
 }
 

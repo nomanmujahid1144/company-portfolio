@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import globalImage from '../../../../assets/index-images/globa.png'
+import shape_04 from '../../../../assets/shapes/shape_04.svg';
+import shape_05 from '../../../../assets/shapes/shape_05.svg';
 
 
 export const AboutCompany = () => {
@@ -29,9 +31,9 @@ export const AboutCompany = () => {
             </div>
             <div className="left-img-meta">
                 <img src={globalImage} alt="" />
-                <img src={"images/shape/shape_04.svg"} alt="" className="shapes shape-one" />
+                <img src={shape_04} alt="" className="shapes shape-one" />
             </div>
-            <img src="images/shape/shape_05.svg" alt="" className="shapes shape-two" />
+            <img src={shape_05} alt="" className="shapes shape-two" />
         </div>
 
     )

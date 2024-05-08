@@ -4,6 +4,7 @@ import webDevelopment from '../../../../assets/services/web-development.png';
 import artificialIntelligence from '../../../../assets/services/artificial-intelligence.png';
 import marketing from '../../../../assets/services/marketing.png';
 import design from '../../../../assets/services/design.png';
+import shape_37 from '../../../../assets/shapes/shape_37.svg';
 
 export const Services = () => {
 
@@ -84,7 +85,7 @@ export const Services = () => {
                     </div>
                 </div>
                 {/* <img src="images/shape/shape_39.svg" alt="" className="shapes shape-three" /> */}
-                <img src="images/shape/shape_37.svg" alt="" className="shapes shape-two" />
+                <img src={shape_37} alt="" className="shapes shape-two" />
             </div>
         </>
     )

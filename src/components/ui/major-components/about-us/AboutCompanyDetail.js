@@ -4,7 +4,8 @@ import customizedSolution from '../../../../assets/icons/customized_solution.svg
 import customerSatisfaction from '../../../../assets/icons/Customer_Satisfaction.svg';
 import strategyPlanning from '../../../../assets/icons/strategy-planning.svg';
 import timelyDelivered from '../../../../assets/icons/timely_delivered.svg';
-import { Link } from 'react-router-dom';
+import shape_25 from '../../../../assets/shapes/shape_25.svg';
+import shape_26 from '../../../../assets/shapes/shape_26.svg';
 
 export const CompanyDetail = () => {
 
@@ -178,8 +179,8 @@ export const CompanyDetail = () => {
 						</div>
 						</div>
 					</div>
-					<img src="images/shape/shape_25.svg" alt="" className="shapes shape-one" />
-					<img src="images/shape/shape_26.svg" alt="" className="shapes shape-two" />
+					<img src={shape_25} alt="" className="shapes shape-one" />
+					<img src={shape_26} alt="" className="shapes shape-two" />
 				</div>
 
 			</div>	

@@ -1,4 +1,4 @@
-import { SlickReviewSlider, SlickTestimonialSlider } from "../../minor-components/slider/SlickSlider"
+import { SlickTestimonialSlider } from "../../minor-components/slider/SlickSlider"
 import { TestimonialCard } from "./TestimonialCard"
 
 export const Testimonials = () => {

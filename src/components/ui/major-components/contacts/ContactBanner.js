@@ -1,3 +1,6 @@
+import icon_34 from '../../../../assets/icons/icon_34.svg';
+import icon_35 from '../../../../assets/icons/icon_35.svg';
+
 export const ContactBanner = () => {
     return (
         <div className="address-section-two">
@@ -6,7 +9,7 @@ export const ContactBanner = () => {
                     <div className="row g-0">
                         <div className="col-md-6">
                             <div className="address-block-two d-flex border-right">
-                                <img src="images/icon/icon_34.svg" alt="" className="icon" />
+                                <img src={icon_34} alt="" className="icon" />
                                 <div className="text-meta">
                                     <h4 className="title">Our Address</h4>
                                     <p>
@@ -18,7 +21,7 @@ export const ContactBanner = () => {
                         </div>
                         <div className="col-md-6">
                             <div className="address-block-two d-flex">
-                                <img src="images/icon/icon_35.svg" alt="" className="icon" />
+                                <img src={icon_35} alt="" className="icon" />
                                 <div className="text-meta">
                                     <h4 className="title">Contact Info</h4>
                                     <p>

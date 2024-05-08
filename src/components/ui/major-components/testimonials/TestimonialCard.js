@@ -1,3 +1,5 @@
+import icon_15 from '../../../../assets/icons/icon_15.svg';
+
 export const TestimonialCard = ({ personName, review, country }) => {
     const maxCharacters = window.innerWidth >= 768 ? 200 : 90; // Adjust based on screen size
   
@@ -11,7 +13,7 @@ export const TestimonialCard = ({ personName, review, country }) => {
       <div className="item slick-slide slick-cloned">
         <div className="testimonial-block-one">
           <div className="icon d-flex align-items-center justify-content-center">
-            <img src="images/icon/icon_15.svg" alt="" />
+            <img src={icon_15} alt="" />
           </div>
           <blockquote>
             {truncatedReview}

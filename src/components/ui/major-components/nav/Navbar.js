@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import MobileNavbar from './MobileNavbar';
-import logo from '../../../../assets/logo/logo.png'
+import logo from '../../../../assets/logo/logo.png';
 import useScroll from '../../minor-components/Scroll-Top/useScroll';
 import { Link } from 'react-router-dom';
 

@@ -1,3 +1,7 @@
+import icon_98 from '../../../../assets/icons/icon_98.svg';
+import icon_99 from '../../../../assets/icons/icon_99.svg';
+import icon_100 from '../../../../assets/icons/icon_100.svg';
+
 export const Counter = () => {
     return (
         <div className="counter-section-four pt-100">
@@ -7,7 +11,7 @@ export const Counter = () => {
                         <div className="counter-block-four mb-45">
                             <div className="d-flex">
                                 <div className="icon">
-                                <img src="images/icon/icon_99.svg" alt="" />
+                                <img src={icon_99} alt="" />
                                 </div>
                                 <div className="text">
                                 <div className="main-count font-recoleta">
@@ -22,7 +26,7 @@ export const Counter = () => {
                         <div className="counter-block-four mb-45">
                             <div className="d-flex">
                                 <div className="icon">
-                                <img src="images/icon/icon_100.svg" alt="" />
+                                <img src={icon_100} alt="" />
                                 </div>
                                 <div className="text">
                                 <div className="main-count font-recoleta">
@@ -37,7 +41,7 @@ export const Counter = () => {
                         <div className="counter-block-four mb-45">
                             <div className="d-flex">
                                 <div className="icon">
-                                <img src="images/icon/icon_98.svg" alt="" />
+                                <img src={icon_98} alt="" />
                                 </div>
                                 <div className="text">
                                 <div className="main-count font-recoleta">

@@ -6,6 +6,8 @@ import screen5 from '../../../../assets/index-images/screen5.png';
 import screen6 from '../../../../assets/index-images/screen6.png';
 import screen7 from '../../../../assets/index-images/screen7.png';
 import screen8 from '../../../../assets/index-images/screen8.png';
+import icon_23 from '../../../../assets/icons/icon_23.svg';
+import shape_03 from '../../../../assets/shapes/shape_03.svg';
 
 export const HeroIndex = () => {
     return (
@@ -33,7 +35,7 @@ export const HeroIndex = () => {
                         <li>
                             <Link to="/case-studies" className="mt-15 callback-button d-flex align-items-center" >
                                 <span>See our Previou Work</span>{" "}
-                                <img src="images/icon/icon_23.svg" alt="" className="ms-3" />
+                                <img src={icon_23} alt="" className="ms-3" />
                             </Link>
                         </li>
                     </ul>
@@ -57,7 +59,7 @@ export const HeroIndex = () => {
                         </div>
                     </div>
                     <img
-                        src="images/shape/shape_03.svg"
+                        src={shape_03}
                         alt=""
                         className="shapes shape-one"
                     />

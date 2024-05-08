@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import logo from '../../../../assets/logo/whiteLogo.png'
 import useScroll from '../../minor-components/Scroll-Top/useScroll'; 
 import { ContactBanner } from '../contacts/ContactBanner';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const Footer = () => {
     const { showButton, scrollToTop } = useScroll();
@@ -128,7 +129,7 @@ export const Footer = () => {
             </footer>
             {showButton && (
                 <button onClick={scrollToTop} className={`${showButton ? 'scroll-top d-block' : 'd-none'}`}>
-                    <i class="bi bi-arrow-up-short"></i>
+                    <FontAwesomeIcon icon='fa-arrow-up' />
                 </button>
             )}
         </>

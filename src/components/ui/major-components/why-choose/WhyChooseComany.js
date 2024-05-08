@@ -2,12 +2,13 @@ import customizedSolution from '../../../../assets/icons/customized_solution.svg
 import customerSatisfaction from '../../../../assets/icons/Customer_Satisfaction.svg';
 import strategyPlanning from '../../../../assets/icons/strategy-planning.svg';
 import timelyDelivered from '../../../../assets/icons/timely_delivered.svg';
+import shape_05 from '../../../../assets/shapes/shape_05.svg';
 import { Link } from 'react-router-dom';
 
 export const WhyChooseCompany = () => {
     return (
         <div className="vcamp-feature-section-four mt-110 lg-mt-110 md-mt-110">
-            <img src="images/shape/shape_05.svg" alt="" className="shapes shape-one" />
+            <img src={shape_05} alt="" className="shapes shape-one" />
             <div className="container">
                 <div className="row align-items-center">
                 <div className="col-xl-5 col-lg-6">

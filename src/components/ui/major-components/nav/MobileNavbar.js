@@ -1,4 +1,5 @@
-import logo from '../../../../assets/logo/logo.png'
+import logo from '../../../../assets/logo/logo.png';
+import icon_22 from '../../../../assets/icons/icon_22.svg';
 import React from 'react';
 import './MobileNavbar.css';
 import { useState } from 'react';
@@ -6,7 +7,6 @@ import { useState } from 'react';
 const menuItems = [
   { text: 'Home', link: '/' },
   { text: 'Portfolio', link: '/portfolio' },
-  // { text: 'Blog', link: '/blog' },
   { text: 'About Us', link: '/about-us' },
   { text: 'Contact', link: '/contact' },
 ];
@@ -71,7 +71,7 @@ const MobileMenu = ({ isOpen, setIsMenuOpen }) => {
 
       <div>
         <a href="sign-in.html" className="theme-btn-one ripple-btn d-block">
-          <img src="images/icon/icon_22.svg" alt="" className="me-2 ms-0" /> Login
+          <img src={icon_22} alt="" className="me-2 ms-0" /> Login
         </a>
       </div>
 

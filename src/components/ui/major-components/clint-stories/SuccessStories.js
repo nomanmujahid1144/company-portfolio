@@ -5,6 +5,8 @@ import portfolioImage_02 from '../../../../assets/portfolios/portfolio_2.png';
 import portfolioImage_03 from '../../../../assets/portfolios/portfolio_3.png';
 import portfolioImage_04 from '../../../../assets/portfolios/portfolio_4.png';
 import portfolioImage_05 from '../../../../assets/portfolios/portfolio_5.png';
+import shape_06 from '../../../../assets/shapes/shape_06.svg';
+
 import { Link } from "react-router-dom";
 
 export const SuccessStories = () => {
@@ -38,7 +40,7 @@ export const SuccessStories = () => {
 
     return (
         <div className="feedback-section-three dark-bg ">
-            <img src="images/shape/shape_06.svg" alt="" className="shapes shape-one" />
+            <img src={shape_06} alt="" className="shapes shape-one" />
             <div className="inner-content d-lg-flex align-items-center clearfix overflow-hidden">
                 <div className="text-wrapper">
                 <div className="title-style-one white-vr">
@@ -51,9 +53,7 @@ export const SuccessStories = () => {
                         View all case study <i className="fas fa-angle-right" />
                     </Link>
                 </div>
-                {/*  /.text-wrapper */}
                 <div className='slider-wrapper'>
-                    {/* <div className="feedback_slider_three"> */}
                     <SlickReviewSlider >
                         {portfolios.map((item) => (
                             <SingleStory
@@ -62,26 +62,7 @@ export const SuccessStories = () => {
                             />
                         ))}
                     </SlickReviewSlider>
-                    {/* </div> */}
                 </div>
-                {/* <div className="slider-wrapper">
-                    <div className="feedback_slider_three">
-                        <div className="item">
-                        <div className="block-wrapper">
-                            <img src="images/media/img_05.jpg" alt="" className="screen" />
-                            <div className="overlay-content d-flex align-items-end">
-                            <a
-                                href="portfolio-detailsV2.html"
-                                className="d-flex justify-content-between align-items-center"
-                            >
-                                <span>www.uiart.com</span>
-                                <img src="images/icon/icon_28.svg" alt="" />
-                            </a>
-                            </div>{" "}
-                        </div>{" "}
-                        </div>
-                    </div>
-                </div> */}
             </div>
         </div>
     )
