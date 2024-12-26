@@ -1,3 +1,4 @@
+import { getCurrentYear } from "../../../../constants/helperFunction";
 import InsideBanner from "../company-portfoilo/InsidePageBanner";
 
 export const PrivacyPolicy = () => {
@@ -13,11 +14,11 @@ export const PrivacyPolicy = () => {
                         <div className="col-lg-12">
                             <div className="blog-meta-wrapper pe-xxl-5">
                                 <article className="blog-details-content">
-                                    <h2 className="text-center">Last Updated: January 1, 2024</h2>
+                                    <h2 className="text-center">Last Updated: January 1, {getCurrentYear()}</h2>
                                     <p>The website ("Site") for Busnet Limited (“Busnet”, “We”, “Our”, “Us” or “Company”) was created to provide software development services (the "Services").</p>
                                     <p>The privacy of our Site visitors ("you," "your," or "user") is important to us, and in order to protect your personal information, we have implemented the following Privacy Policy with provisions that apply to the collection of data by Busnet, its subsidiaries, and its affiliates.</p>
                                     <p>Our Privacy Policy discloses the type and nature of information we collect and how we use it, as well as the choices you can make about the way your information is collected and used. We also explain how any requests for personal or personally identifiable information will be used. By exploring and using Busnet’s Site and/or Services, and by submitting information to Busnet, you signify acceptance to the terms of our Privacy Policy.</p>
-                                    <p>If you have questions or concerns regarding this statement, you should first contact us at <a href="mailto:sales@busnet.org">sales@busnet.org</a>.</p>
+                                    <p>If you have questions or concerns regarding this statement, you should first contact us at <a href="mailto:sales@busnett.co.uk">sales@busnett.co.uk</a>.</p>
                                     <h6 className="my-3">
                                         <strong>Updates and Changes to the Privacy Policy</strong>
                                     </h6>
@@ -94,7 +95,7 @@ export const PrivacyPolicy = () => {
                                     <h6 className="my-3">&zwj;
                                         <strong>Where You Can View and Correct Your Information</strong>
                                     </h6>
-                                    <p>We urge you to review your information regularly to ensure that it is correct and complete. If you believe that any of your information is incorrect, or if you have any questions regarding this Privacy Policy, please contact us at sales@busnet.org.</p>
+                                    <p>We urge you to review your information regularly to ensure that it is correct and complete. If you believe that any of your information is incorrect, or if you have any questions regarding this Privacy Policy, please contact us at sales@busnett.co.uk.</p>
                                     <h6 className="my-3">&zwj;
                                         <strong>Links to Other Sites</strong>
                                     </h6>
@@ -106,13 +107,13 @@ export const PrivacyPolicy = () => {
                                     <h6 className="my-3">&zwj;
                                         <strong>Children’s Privacy Policy</strong>
                                     </h6>
-                                    <p>The Busnet website is not intended for use by children, especially those under eighteen (18) years of age. No one under eighteen (18) years of age is allowed to use the website, provide any personal information or receive our email distributions. We do not knowingly solicit or collect Personally Identifiable Information from children under eighteen years of age. If you believe that a minor has disclosed Personally Identifiable Information to Busnet, please report this to us at: sales@busnet.org.</p>
+                                    <p>The Busnet website is not intended for use by children, especially those under eighteen (18) years of age. No one under eighteen (18) years of age is allowed to use the website, provide any personal information or receive our email distributions. We do not knowingly solicit or collect Personally Identifiable Information from children under eighteen years of age. If you believe that a minor has disclosed Personally Identifiable Information to Busnet, please report this to us at: sales@busnett.co.uk.</p>
                                     <h6 className="my-3">&zwj;
                                         <strong>Contact Information</strong>
                                     </h6>
-                                    <p>Please contact Busnet with any questions or comments about this Privacy Policy, your personal information, or your choices with regards to our collection and use of your personal information, email at sales@busnet.org.</p>
+                                    <p>Please contact Busnet with any questions or comments about this Privacy Policy, your personal information, or your choices with regards to our collection and use of your personal information, email at sales@busnett.co.uk.</p>
                                     <p>If you believe that we have infringed your rights, we encourage you to contact us first so that we can try to resolve the issue informally.</p>
-                                    <p>For citizens of the European Union and United States, please contact sales@busnet.org for requests and inquiries regarding the data retained and managed by this portal and your rights to be forgotten related to the General Data Protection Regulation (GDPR).</p>
+                                    <p>For citizens of the European Union and United States, please contact sales@busnett.co.uk for requests and inquiries regarding the data retained and managed by this portal and your rights to be forgotten related to the General Data Protection Regulation (GDPR).</p>
                                 </article>
                             </div>
                         </div>

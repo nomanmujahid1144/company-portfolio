@@ -25,7 +25,6 @@ function Layout(props) {
         <>
             <Navbar />
             {showLoader ? (
-
                 <Loader >
                     <Outlet />
                 </Loader>

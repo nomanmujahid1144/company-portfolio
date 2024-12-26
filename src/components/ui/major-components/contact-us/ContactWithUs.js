@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom"
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
@@ -14,32 +14,36 @@ import icon_19 from '../../../../assets/icons/icon_19.svg';
 
 export const ContactIndex = () => {
 
-	
-    const [value, setValue] = useState();
-    const dispatch = useDispatch();
-    const navigate = useNavigate();
+
+	const [value, setValue] = useState();
+	const dispatch = useDispatch();
+	const navigate = useNavigate();
+
+	const loading = useSelector(
+		(state) => state.ProgressBarReducer
+	)
 
 	const [credentials, setcredentials] = useState({
-        fullName: "",
-        companyName: "",
-        email: "",
-        message: "",
-    });
-	
+		fullName: "",
+		companyName: "",
+		email: "",
+		message: "",
+	});
+
 
 	const handleSubmit = async (e) => {
-        e.preventDefault();
-        const { fullName, companyName, email,  message } = credentials;
-        dispatch(sendContactUsMessage(fullName, companyName, value, email, message, navigate, toast, setcredentials, setValue));
-    };
+		e.preventDefault();
+		const { fullName, companyName, email, message } = credentials;
+		dispatch(sendContactUsMessage(fullName, companyName, value, email, message, navigate, toast, setcredentials, setValue));
+	};
 
 
 	const onChange = (e) => {
-        setcredentials({ ...credentials, [e.target.name]: e.target.value });
-    };
+		setcredentials({ ...credentials, [e.target.name]: e.target.value });
+	};
 
 
-    return(
+	return (
 		<>
 			<div className="inside-hero-one hero-spacing">
 				<div className="container">
@@ -53,23 +57,23 @@ export const ContactIndex = () => {
 						<div className="col-md-6">
 							<div className="form-style-three ps-0 sm-pb-80">
 								<form onSubmit={handleSubmit}>
-										<div className="messages" />
-										<div className="row controls">
+									<div className="messages" />
+									<div className="row controls">
 										<div className="col-12">
 											<div className="input-group-meta form-group mb-25">
-													<InputField
+												<InputField
 													label="Name*"
-														type="text"
-														required={true}
-														id="fullName"
-														placeholder=""
-														value={credentials?.fullName}
-														onChange={onChange}
-													/>
-													<div className="help-block with-errors" />
-													</div>
+													type="text"
+													required={true}
+													id="fullName"
+													placeholder=""
+													value={credentials?.fullName}
+													onChange={onChange}
+												/>
+												<div className="help-block with-errors" />
 											</div>
-											<div className="col-12">
+										</div>
+										<div className="col-12">
 											<div className="input-group-meta form-group mb-25">
 												<InputField
 													label="Company Name*"
@@ -81,7 +85,7 @@ export const ContactIndex = () => {
 													onChange={onChange}
 												/>
 												<div className="help-block with-errors" />
-												</div>
+											</div>
 										</div>
 										<div className="col-12">
 											<div className="input-group-meta form-group mb-25">
@@ -90,10 +94,10 @@ export const ContactIndex = () => {
 													isValidPhoneNumber={true}
 													limitMaxLength={true}
 													className="form-control border border-gray-300 text-sm"
-													style={{background: '#F2F2F2'}}
+													style={{ background: '#F2F2F2' }}
 													international
 													initialValueFormat="international"
-													countryCallingCodeEditable={false} 
+													countryCallingCodeEditable={false}
 													defaultCountry="GB"
 													name="phoneNumber"
 													placeholder="Enter phone number"
@@ -102,7 +106,7 @@ export const ContactIndex = () => {
 													displayInitialValueAsLocalNumber
 												/>
 												<div className="help-block with-errors" />
-												</div>
+											</div>
 										</div>
 										<div className="col-12">
 											<div className="input-group-meta form-group mb-25">
@@ -115,26 +119,26 @@ export const ContactIndex = () => {
 													value={credentials?.email}
 													onChange={onChange}
 												/>
-											<div className="help-block with-errors" />
+												<div className="help-block with-errors" />
 											</div>
 										</div>
 										<div className="col-12">
 											<div className="input-group-meta form-group mb-35">
-											<TextField
-												label="Your message*"
-												type="text"
-												required={true}
-												id="message"
-												placeholder=""
-												value={credentials?.message}
-												onChange={onChange}
-											/>	
-											<div className="help-block with-errors" />
+												<TextField
+													label="Your message*"
+													type="text"
+													required={true}
+													id="message"
+													placeholder=""
+													value={credentials?.message}
+													onChange={onChange}
+												/>
+												<div className="help-block with-errors" />
 											</div>
 										</div>
 										<div className="col-12">
-											<button className="theme-btn-one ripple-btn w-100">
-											Send Message
+											<button disabled={loading ? true : false} className={`${loading ? 'cursor-none' : ''} theme-btn-one ripple-btn w-100`}>
+												{loading ? 'Sending Message' : 'SEND Message'}
 											</button>
 										</div>
 									</div>
@@ -151,7 +155,7 @@ export const ContactIndex = () => {
 									<p >
 										First Floor, 85 Great Portland St, <br />
 										London,  United Kingdom
-									</p> 
+									</p>
 								</div>
 							</div>
 							<div className="address-block-three d-flex mb-80 lg-mb-40">
@@ -161,14 +165,14 @@ export const ContactIndex = () => {
 								<div className="text">
 									<h5 className="title">Hit us up!</h5>
 									<p>
-									Get 24/7 help from our pros <br />
-									<a href="tel:+447456659691" className="call">
-										(+44) 7456 659 691
-									</a>
-									<br />
+										Get 24/7 help from our pros <br />
+										<a href="tel:+447456659691" className="call">
+											(+44) 7456 659 691
+										</a>
+										<br />
 									</p>
 								</div>
-								</div>
+							</div>
 							<div className="address-block-three d-flex">
 								<div className="icon">
 									<img src={icon_19} alt="" />
@@ -176,8 +180,8 @@ export const ContactIndex = () => {
 								<div className="text">
 									<h5 className="title">Discover solutions with our sales experts.</h5>
 									<p>
-										<a href="mailto:sales@busnet.org" className="webaddress">
-											sales@busnet.org
+										<a href="mailto:sales@busnett.co.uk" className="webaddress">
+											sales@busnett.co.uk
 										</a>
 									</p>
 								</div>
@@ -186,6 +190,6 @@ export const ContactIndex = () => {
 					</div>
 				</div>
 			</div>
-        </>
-    )
+		</>
+	)
 }

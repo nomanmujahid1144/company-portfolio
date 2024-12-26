@@ -16,7 +16,7 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter scrollRestoration="auto">
-        <div className='main-page-wrapper'>
+        <div className='main-page-wrapper light-bg'>
           <ToastContainer
             autoClose={2000}
             position='top-center'

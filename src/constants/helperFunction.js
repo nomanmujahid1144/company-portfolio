@@ -52,3 +52,8 @@ export const isValidFileType = async (file) => {
 
   return allowedTypes.includes(file.type);
 }
+
+
+export const getCurrentYear = () => {
+  return new Date().getFullYear();
+}

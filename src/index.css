@@ -189,3 +189,123 @@ object {
   font-weight: 500;
   line-height: 1.5em;
 }
+.logo-grap{
+  filter: grayscale();
+}
+.partner-logo{
+  max-width: 140px;
+  height: 51px;
+  object-fit: contain;
+  opacity: 1;
+}
+
+.gray-logos{
+  filter: grayscale();
+  opacity: .7;
+}
+
+.partners-container {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  flex-flow: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px
+}
+
+.partners-container.align-left {
+  align-items: flex-start
+}
+
+.partners-container.large-right {
+  margin-right: 0
+}
+
+.partners-container.multi-blocks-container {
+  grid-column-gap: 0px;
+  grid-row-gap: 24px;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center
+}
+
+.partners-container.industry-container,.partners-container.left-align-flex,.partners-container.nav-container,.partners-container.simple-nav-container {
+  justify-content: center;
+  align-items: flex-start
+}
+
+.partners-container.bottom {
+  border-top: 1px solid var(--paragraph-gray);
+  outline-offset: 0px;
+  outline: 3px #7987a1;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-top: 10px;
+  display: flex
+}
+
+.partners-container.bottom.cookies {
+  border-top-style: none
+}
+
+.partners-container.title-center {
+  margin-bottom: 0
+}
+
+.w-layout-blockcontainer{
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.w-container{
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w-container::before, .w-container::after{
+  content: " ";
+  grid-area: 1 / 1 / 2 / 2;
+  display: table;
+}
+.logo-overflow-hidden{
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+.partners-logo-wrapper{
+  grid-column-gap: 50px;
+  object-fit: contain;
+  flex-flow: row;
+  max-width: 100%;
+  display: flex;
+}
+.gap-50{
+  gap: 50px;
+}
+/* Navbar CSS */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.scroll {
+  animation: scroll 15s linear infinite;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.cursor-none{
+  cursor: not-allowed;
+}
+.ripple-btn.theme-btn-one:disabled{
+  opacity: .5;
+}

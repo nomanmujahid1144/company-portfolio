@@ -42,7 +42,7 @@ export const Footer = () => {
                                 <Link to="/about-us">About</Link>
                             </li>
                             <li>
-                                <Link to="#">Service</Link>
+                                <Link to="/services">Service</Link>
                             </li>
                             <li>
                                 <Link to="/contact-us">Contact Us</Link>
@@ -53,24 +53,23 @@ export const Footer = () => {
                         <h5 className="title">Services</h5>
                         <ul className="footer-list style-none">
                             <li>
-                                <a href="#">API Development</a>
+                                <a href="/services/web-development">Web Development</a>
                             </li>
                             <li>
-                                <a href="#">Mobile Development</a>
+                                <a href="/services/mobile-app-development">Mobile Development</a>
                             </li>
                             <li>
-                                <a href="#">Web Development</a>
+                                <a href="/services/api-integration">API Integration</a>
                             </li>
                             <li>
-                                <a href="#">AI & Machine Learning</a>
+                                <a href="/services/artificial-intelligence">AI & Machine Learning</a>
                             </li>
                             <li>
-                                <a href="#">Digital Marketing</a>
+                                <a href="/services/digital-transformation">Digital Transformation</a>
                             </li>
                             <li>
-                                <a href="#">UI/UX Design</a>
+                                <a href="/services/microsoft-dynamics-365-business-solutions">Dynamics 365</a>
                             </li>
-                       
                         </ul>
                     </div>
                     <div className="col-lg-3 col-md-6 mb-40">
@@ -94,7 +93,7 @@ export const Footer = () => {
                         <div className="col-lg-4 order-lg-1 mb-15">
                             <ul className="d-flex justify-content-center justify-content-lg-start footer-nav style-none">
                                 <li>
-                                <a href="#">Privacy &amp; Terms</a>
+                                <a href="/privacy-policy">Privacy &amp; Terms</a>
                                 </li>
                                 <li>
                                 <a href="/contact-us">Contact Us</a>

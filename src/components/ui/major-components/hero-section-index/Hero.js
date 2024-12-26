@@ -16,46 +16,45 @@ export const HeroIndex = () => {
                 <div className="main-content h-100">
                     <div className="text-wrapper">
                         <h1 className="hero-heading font-recoleta">
-                            Hi, we're Busnet,  your
+                            Empowering Ideas, Engineering
                             <span >
-                                Business
+                                Success
                             </span>.
                         </h1>
 
-
-                    <p className="hero-sub-heading text-lg">
-                        Your expert partner for nurturing online business growth and boosting sales.
-                    </p>
-                    <ul className="button-group d-sm-flex align-items-center style-none">
-                        <li>
-                            <Link to="/contact-us" className="mt-15 demo-button tran3s">
-                                Book Your Free Call
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/case-studies" className="mt-15 callback-button d-flex align-items-center" >
-                                <span>See our Previou Work</span>{" "}
-                                <img src={icon_23} alt="" className="ms-3" />
-                            </Link>
-                        </li>
-                    </ul>
+                        <p className="hero-sub-heading text-lg">
+                        Partner with expert developers and IT specialists in 100+ technologies, delivering tailored solutions for your business.
+                        </p>
+                        <ul className="button-group d-sm-flex align-items-center style-none">
+                            <li>
+                                <Link to="/contact-us" className="mt-15 demo-button tran3s">
+                                    Book Free Call
+                                </Link>
+                            </li>
+                            {/* <li>
+                                <Link to="/case-studies" className="mt-15 callback-button d-flex align-items-center" >
+                                    <span>See our Work</span>{" "}
+                                    <img src={icon_23} alt="" className="ms-3" />
+                                </Link>
+                            </li> */}
+                        </ul>
                     </div>
-                    
+
                     <div className="row gx-md-5 align-items-end h-100">
                         <div className="col-3">
-                        <img src={screen2} alt="" />
+                            <img src={screen2} alt="" />
                         </div>
                         <div className="col-3">
-                        <img src={screen3} alt="" className="mb-35" />
-                        <img src={screen4} alt="" />
+                            <img src={screen3} alt="" className="mb-35" />
+                            <img src={screen4} alt="" />
                         </div>
                         <div className="col-3">
-                        <img src={screen5} alt="" className="mb-35" />
-                        <img src={screen6} alt="" />
+                            <img src={screen5} alt="" className="mb-35" />
+                            <img src={screen6} alt="" />
                         </div>
                         <div className="col-3">
-                        <img src={screen7} alt="" className="mb-35" />
-                        <img src={screen8} alt="" />
+                            <img src={screen7} alt="" className="mb-35" />
+                            <img src={screen8} alt="" />
                         </div>
                     </div>
                     <img
@@ -66,7 +65,6 @@ export const HeroIndex = () => {
                 </div>{" "}
                 {/* /.main-content */}
             </div>
-    </div>
-
+        </div>
     )
 }
